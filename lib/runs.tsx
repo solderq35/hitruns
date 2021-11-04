@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios from 'axios';
 import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderboard';
 
@@ -6,8 +7,9 @@ import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderb
 export const requestRuns: any = async () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   
-  let response: [string] = [await axios.get('https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=gq7jpknq&embed=platforms%2Cplayers&timing=realtime_noloads')];
-  var { data } = response[0].data;
+  const response: any = await axios.get('https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=gq7jpknq&embed=platforms%2Cplayers&timing=realtime_noloads'
+  );
+  const { data } = response.data;
 
   const requestedRuns: ReqRun[] = data.runs;
   const requestedEmbedPlayers: ReqPlayer[] = data.players.data;
@@ -27,7 +29,7 @@ export const requestRuns: any = async () => {
 };
 
 // Converts runs as obtained from speedrun.com into an object that is easier to work with.
-export const parseRuns = (requestedRuns: ReqRun[], platform: ReqPlatform, players: ReqPlayer[]): ParsedRun[] => {
+export const parseRuns = (requestedRuns: ReqRun[], _platform: ReqPlatform, players: ReqPlayer[]): ParsedRun[] => {
   const filteredRuns: ReqRun[] = requestedRuns.filter((item) => item.run.system.platform === "8gej2n93" || "4p9zjrer");
 
   const parsedRuns: ParsedRun[] = filteredRuns.map((item: ReqRun, i: number) => {

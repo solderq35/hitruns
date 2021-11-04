@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios from 'axios';
 import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderboard';
 
