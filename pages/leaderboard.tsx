@@ -1,35 +1,38 @@
 import { GetStaticProps } from 'next';
+import { Row, Col } from 'react-bootstrap';
 import { requestRuns } from '../lib/runs';
 import { ParsedRun } from '../interfaces/leaderboard';
+import ReactPlayer from 'react-player';
 
 import Layout from '../components/Layout';
 import LeaderboardTable from '../components/LeaderboardTable';
-import { Row, Col } from 'react-bootstrap';
 
 type Props = {
   gamecubeRuns: ParsedRun[];
   pcRuns: ParsedRun[];
 };
 
-const Leaderboard = ({ gamecubeRuns, pcRuns }: Props): JSX.Element => {
-  return (
-    <Layout title="Leaderboard | HobbitSpeedruns" headerText="leaderboard">
-      <Row>
-        <Col xl={6} lg={12} className="pr-2 mb-3 overflow-auto">
-          <h4 className="text-center">GameCube Any% NMG</h4>
-          <LeaderboardTable runs={gamecubeRuns} />
-        </Col>
-        <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto">
-          <h4 className="text-center">PC Any% NMG</h4>
-          <LeaderboardTable runs={pcRuns} />
-        </Col>
-        <Col xs={12}>
-          <a className="mb-0" href="https://www.speedrun.com/hobbit" target="_blank" rel="noreferrer">Leaderboard data taken from speedrun.com</a>
-        </Col>
-      </Row>
-    </Layout>
-  );
-};
+const IndexPage = ({ gamecubeRuns, pcRuns }: Props): JSX.Element => (
+  <Layout title="Home | HobbitSpeedruns" headerText="HITMAN 3 SPEEDRUNS">
+ <table class ="table1">
+  <tr>
+    <th><a href="s2dlc_sa_p" class="class2">Season 2 (w/ DLC) SA Pro</a> </th>
+    <th>Season 3 SASO Pro</th>
+    <th>Season SA Master</th>
+  </tr>
+  <tr>
+    <th>Season 3</th>
+    <th>Maria Anders</th>
+    <th>Germany</th>
+  </tr>
+  <tr>
+    <th>Season 1</th>
+    <th>Francisco Chang</th>
+    <th>Mexico</th>
+  </tr>
+</table>
+  </Layout>
+);
 
 export const getStaticProps: GetStaticProps = async () => {
   const [gamecubeRuns, pcRuns] = await requestRuns();
@@ -40,4 +43,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default Leaderboard;
+export default IndexPage;

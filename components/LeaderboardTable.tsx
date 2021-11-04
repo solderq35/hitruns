@@ -11,7 +11,7 @@ type Props = {
 
 const formatTime = (inputSeconds: number): string => {
   if (inputSeconds === 0) {
-    return 'Unknown';
+    return 'N/A';
   }
 
   const hours: string = Math.floor(inputSeconds / 3600).toString();
@@ -27,8 +27,8 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
       <tr className={`${styles.default}`}>
         <th></th>
         <th>Player</th>
-        <th className="text-right">Loadless</th>
-        <th className="text-right">Realtime</th>
+        <th className="text-right">In Game Time</th>
+        <th className="text-right">Real Time</th>
         {!compact && <th className="text-right">Date</th>}
       </tr>
     </thead>
@@ -66,16 +66,20 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                 {run.player}
               </a>
             </td>
-            <td className="text-right">
-              <a href={run.weblink} target="_blank" rel="noreferrer">
-                {formatTime(run.realtime_noloads || 0)}
-              </a>
-            </td>
+  
             <td className="text-right">
               <a href={run.weblink} target="_blank" rel="noreferrer">
                 {formatTime(run.realtime || 0)}
               </a>
             </td>
+			          <td className="text-right">
+              <a href={run.weblink} target="_blank" rel="noreferrer">
+                {formatTime(run.realtime_noloads || 0)}
+				
+              </a>
+			  
+            </td>
+			
             {!compact && (
               <td className="text-right">
                 <a href={run.weblink} target="_blank" rel="noreferrer">
@@ -86,8 +90,12 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
           </tr>
         );
       })}
-    </tbody>
-  </table>
-);
 
+    </tbody>
+
+  </table>
+
+);
+				
 export default LeaderboardTable;
+

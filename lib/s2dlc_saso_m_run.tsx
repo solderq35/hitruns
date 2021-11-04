@@ -6,7 +6,7 @@ import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderb
 export const requestRuns: any = async () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   
-  let response: [string] = [await axios.get('https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=gq7jpknq&embed=platforms%2Cplayers&timing=realtime_noloads')];
+  let response: [string] = [await axios.get('https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/9kv6n132?var-j84eq0wn=21g85yxl&var-5lypzk9l=mlnw9jol&var-78962g08=p12dkr2q&embed=platforms%2Cplayers&timing=realtime_noloads')];
   var { data } = response[0].data;
 
   const requestedRuns: ReqRun[] = data.runs;
