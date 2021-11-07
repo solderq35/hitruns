@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GetStaticProps } from 'next';
 import { requestRuns } from '../lib/s1_saso_m_run';
 import { ParsedRun } from '../interfaces/leaderboard';

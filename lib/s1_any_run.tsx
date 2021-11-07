@@ -1,14 +1,15 @@
+// @ts-nocheck
 import axios from 'axios';
 import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderboard';
 
 
 export const requestRuns: any = async () => {
-
   let mapcategory:string = "zd3oqzrd";
   let difficulty:string = "4qyp9g6q";
   let rating:string= "jqzp9k4l";
+
   
-  let response: [string] = [await axios.get( 'https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/' + mapcategory + '?var-j84eq0wn=' + rating + '&var-5lypzk9l=' + difficulty + '&var-78962g08=p12dkr2q&embed=platforms%2Cplayers&timing=realtime_noloads')];
+ let response: [string] = [await axios.get( 'https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/' + mapcategory + '?var-j84eq0wn=' + rating + '&var-5lypzk9l=' + difficulty + '&var-78962g08=p12dkr2q&embed=platforms%2Cplayers&timing=realtime_noloads')];
   var { data } = response[0].data;
 
   const requestedRuns: ReqRun[] = data.runs;
