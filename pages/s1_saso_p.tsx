@@ -1,14 +1,14 @@
 import { GetStaticProps } from 'next';
-import { requestRuns } from '../lib/s2dlc_saso_p_run';
+import { requestRuns } from '../lib/s1_saso_p_run';
 import { ParsedRun } from '../interfaces/leaderboard';
 import Layout from '../components/Layout';
 import LeaderboardTable from '../components/LeaderboardTable';
 import { Row, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown'
 
-var category = "Season 2 (w/DLC)";
+var category = "Season 1";
 var ratingdiff = "SASO Pro";
-var linkname = "s2dlc";
+var linkname = "s1";
 
 var sap = linkname + "_sa_p";
 var sasop = linkname + "_saso_p";

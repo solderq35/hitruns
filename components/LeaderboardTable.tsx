@@ -43,7 +43,7 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
         if (i < 1) {
           style = styles.gold;
         } else if (i < 2) {
-          style = styles.silver;
+          style = styles.silver
         } else if (i < 3) {
           style = styles.bronze;
         } else {
@@ -66,19 +66,22 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                 {run.player}
               </a>
             </td>
-  
-            <td className="text-right">
-              <a href={run.weblink} target="_blank" rel="noreferrer">
-                {formatTime(run.realtime || 0)}
-              </a>
-            </td>
-			          <td className="text-right">
+			   <td className="text-right">
               <a href={run.weblink} target="_blank" rel="noreferrer">
                 {formatTime(run.realtime_noloads || 0)}
 				
               </a>
+            </td>
+			
+  <td className="text-right">
+              <a href={run.weblink} target="_blank" rel="noreferrer">
+                
+				{formatTime(run.realtime || 0)}
+              </a>
 			  
             </td>
+         
+			          
 			
             {!compact && (
               <td className="text-right">
@@ -86,7 +89,9 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                   {run.date}
                 </a>
               </td>
+			  
             )}
+			
           </tr>
         );
       })}

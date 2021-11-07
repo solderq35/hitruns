@@ -10,10 +10,11 @@ export type ReqRun = {
     times: {
       primary: string | null;
       primary_t: number | null;
-      realtime: string | null;
-      realtime_t: number | null;
+      
       realtime_noloads: string | null;
       realtime_noloads_t: number | null;
+	  realtime: string | null;
+      realtime_t: number | null;
       ingame: string | null;
       ingame_t: number | null;
     };

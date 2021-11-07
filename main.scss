@@ -4,6 +4,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-attachment: fixed;
 }
 
 @media (max-width: 992px) { 
@@ -42,8 +43,13 @@ a.class1 {
 }
 
 a.class2 {
-  color: rgb(255, 203, 61) !important;
+  color: rgb(0,0,0) !important;
   font-size: 1.0rem;
+}
+
+a.class3 {
+  color: rgb(255, 203, 61) !important;
+  font-size: 1rem;
 }
 header {
   font-size: 5rem;
@@ -86,6 +92,11 @@ h2 {
     opacity: 0.7;
 }
 
+.dropdown-menu {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
 @font-face {
   font-family: 'DejavuSans';
   src: url('./public/fonts/DejaVuSans.woff2') format('woff2'),
@@ -122,6 +133,7 @@ h2 {
   padding-left:10px;
  // width: 400px;
 }
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');

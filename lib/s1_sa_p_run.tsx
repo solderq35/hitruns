@@ -4,7 +4,7 @@ import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderb
 
 export const requestRuns: any = async () => {
 
-  let mapcategory:string = "rkl3no8k";
+  let mapcategory:string = "zd3oqzrd";
   let difficulty:string = "4qyp9g6q";
   let rating:string= "gq7jpknq";
   

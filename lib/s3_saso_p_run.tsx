@@ -6,7 +6,7 @@ export const requestRuns: any = async () => {
 
   let mapcategory:string = "rkl3no8k";
   let difficulty:string = "4qyp9g6q";
-  let rating:string= "gq7jpknq";
+  let rating:string= "21g85yxl";
   
   let response: [string] = [await axios.get( 'https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/' + mapcategory + '?var-j84eq0wn=' + rating + '&var-5lypzk9l=' + difficulty + '&var-78962g08=p12dkr2q&embed=platforms%2Cplayers&timing=realtime_noloads')];
   var { data } = response[0].data;
