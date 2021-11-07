@@ -1,22 +1,46 @@
 // @ts-nocheck
 import { GetStaticProps } from 'next';
-import { requestRuns } from '../lib/s2dlc_any_run';
 import { ParsedRun } from '../interfaces/leaderboard';
 import Layout from '../components/Layout';
 import LeaderboardTable from '../components/LeaderboardTable';
 import { Row, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown'
+import { requestRuns } from '../lib/s2dlc_any_run';
 
-var category = "Season 2 (w/ DLC)";
+var linkname = "s2dlc";
+var category = "Season 2 (w/DLC)";
 var rating = "Any%";
 var diff = "";
-var linkname = "s2dlc";
 
+var ratingdropdown;
+if (rating == "Any%")
+{
+ratingdropdown="any";
+} else {
+	ratingdropdown=rating.toLowerCase();
+}
+
+var diffdropdown;
+if (diff=="Pro")
+{
+diffdropdown="p";
+} else if (diff=="Master")
+{
+	diffdropdown="m";
+}
+else if (diff=="")
+{
+	diffdropdown="";
+}
 var sap = linkname + "_sa_p";
 var sasop = linkname + "_saso_p";
-var any = linkname + "_any";
+var any = linkname + "_any_";
 var sam = linkname + "_sa_m";
 var sasom = linkname + "_saso_m";
+
+var level3= "s3_" + ratingdropdown + "_" + diffdropdown;
+var level2= "s2dlc_" + ratingdropdown + "_" + diffdropdown;
+var level1= "s1_" + ratingdropdown + "_" + diffdropdown;
 
 type Props = {
   gamecubeRuns: ParsedRun[];
@@ -32,7 +56,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
     <Layout title="Leaderboard || HitRuns" headerText="FULL GAME LEADERBOARD">
       <Row>
 	  
-	  <div className="dropdownlevel">
+
 	   <Dropdown>
   <Dropdown.Toggle variant="warning" id="dropdown-basic">
     Full Game Category Select
@@ -41,38 +65,35 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
   
 
    <Dropdown.Menu variant="dark">
-  <div className="dmenu">
-    <Dropdown.Item href="s3_sa_p" className = "class2">Season 3</Dropdown.Item>
-    <Dropdown.Item href="s2dlc_sa_p" className = "class2">Season 2</Dropdown.Item>
-    <Dropdown.Item href="s1_sa_p" className = "class2">Season 1</Dropdown.Item>
+ 
+    <Dropdown.Item href={level3} className = "class2">Season 3</Dropdown.Item>
+    <Dropdown.Item href={level2} className = "class2">Season 2</Dropdown.Item>
+    <Dropdown.Item href={level1} className = "class2">Season 1</Dropdown.Item>
 	   
-  </div>
+  
   </Dropdown.Menu>
 
 </Dropdown>
-  </div>
 
 
         <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
 		  <center>
 		  
 		   <h4 className="text-center">{category} {rating} {diff}</h4>
-
+<center>
 		  </center>
-		  			  <center>
-			  <a href={sap} className="class1">SA Pro</a>     
-			  &nbsp
-			  &nbsp
-			  <a href={sasop} className="class1">SASO Pro</a>     
-			  &nbsp
-			  &nbsp
-			  <a href={any} className="class1">Any%</a>
-			  &nbsp
-			  &nbsp
-			  <a href={sam} className="class1">SA Master</a>
-			  &nbsp
-			  &nbsp
-			  <a href={sasom} className="class1">SASO Master</a>
+		  			  
+			 <table class = "center" width="100%" id="subcat">
+ 
+  <tr>
+    <th mt-2 mb-0 color-yellow d-none d-md-block><a href={sap} className="class3">SA Pro</a> </th>
+    <th mt-2 mb-0 color-yellow d-none d-md-block><a href={sasop} className="class3">SASO Pro</a> </th>
+    <th mt-2 mb-0 color-yellow d-none d-md-block><a href={any} className="class3">Any</a> </th>
+	<th mt-2 mb-0 color-yellow d-none d-md-block><a href={sam} className="class3">SA Master</a> </th>
+	<th mt-2 mb-0 color-yellow d-none d-md-block><a href={sasom} className="class3">SASO Master</a> </th>
+  </tr>
+ 
+</table>
 			    
           
 		  </center>
@@ -82,6 +103,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
  </center>		 
  &nbsp
 			  &nbsp
+
 		 <LeaderboardTable runs={gamecubeRuns} />
 
         </Col>

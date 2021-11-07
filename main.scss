@@ -126,12 +126,12 @@ h2 {
   }
   .row1{
   border-top: solid;
-  border-color: transparent;
+  border-color: white;
   padding-top: 5px;
   }
   
   table.table1, th, td {
-  border:3px transparent;
+  border:3px solid white;
   padding-right:10px;
   padding-left:10px;
  // width: 400px;
@@ -144,6 +144,8 @@ h2 {
 
 #subcat th{
 text-align: center;
+border:3px transparent;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
