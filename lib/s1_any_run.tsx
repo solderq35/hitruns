@@ -2,8 +2,9 @@
 import axios from 'axios';
 import { ReqRun, ParsedRun, ReqPlatform, ReqPlayer } from '../interfaces/leaderboard';
 
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const requestRuns: any = async () => {
+	  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let mapcategory:string = "zd3oqzrd";
   let difficulty:string = "4qyp9g6q";
   let rating:string= "jqzp9k4l";
