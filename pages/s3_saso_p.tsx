@@ -8,8 +8,7 @@ import { Row, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown'
 
 var category = "Season 3";
-var rating = "SASO";
-var diff = "";
+var ratingdiff = "SASO Pro";
 var linkname = "s3";
 
 var sap = linkname + "_sa_p";
@@ -56,7 +55,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
         <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
 		  <center>
 		  
-		   <h4 className="text-center">{category} {rating} {diff}</h4>
+		   <h4 className="text-center">{category} {ratingdiff}</h4>
 
 		  </center>
 		  			  <center>
