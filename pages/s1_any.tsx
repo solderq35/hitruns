@@ -82,6 +82,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
  </center>		 
  &nbsp
 			  &nbsp
+
 		 <LeaderboardTable runs={gamecubeRuns} />
 
         </Col>
