@@ -48,6 +48,10 @@ a.class2 {
 
 a.class3 {
   color: rgb(255, 203, 61) !important;
+  font-size: 3vh;
+}
+a.class4 {
+  color: rgb(255, 203, 61) !important;
   font-size: 1rem;
 }
 header {
@@ -133,6 +137,13 @@ h2 {
  // width: 400px;
 }
 
+  table.table1, th, td {
+    margin-left: auto;
+  margin-right: auto;
+  }
 
+#subcat th{
+text-align: center;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');

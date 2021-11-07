@@ -17,14 +17,14 @@ type Props = {
 const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
   <Layout title="Home | HobbitSpeedruns" headerText="HITMAN 3 SPEEDRUNS">
  <center>
- <table width="100%">
+ <table class = "center" width="100%" id="subcat">
  
   <tr>
-    <th><a href="s2dlc_sa_p" className="class1">SA Pro</a> </th>
-    <th><a href="s2dlc_sa_p" className="class1">SASO Pro</a> </th>
-    <th><a href="s2dlc_sa_p" className="class1">Any%</a> </th>
-	<th><a href="s2dlc_sa_p" className="class1">SA Master</a> </th>
-	<th><a href="s2dlc_sa_p" className="class1">SASO Master</a> </th>
+    <th mt-2 mb-0 color-yellow d-none d-md-block><a href="s2dlc_sa_p" className="class3">SA Pro</a> </th>
+    <th><a href="s2dlc_sa_p" className="class3">SASO Pro</a> </th>
+    <th><a href="s2dlc_sa_p" className="class3">Any%</a> </th>
+	<th><a href="s2dlc_sa_p" className="class3">SA Master</a> </th>
+	<th><a href="s2dlc_sa_p" className="class3">SASO Master</a> </th>
   </tr>
  
 </table>
