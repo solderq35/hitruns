@@ -15,23 +15,19 @@ type Props = {
 
 const IndexPage = ({ gamecubeRuns, pcRuns }: Props): JSX.Element => (
   <Layout title="Home | HobbitSpeedruns" headerText="HITMAN 3 SPEEDRUNS">
+ <center>
  <table class ="table1">
+ 
   <tr>
-    <th><a href="s2dlc_sa_p" class="class2">Season 2 (w/ DLC) SA Pro</a> </th>
-    <th>Season 3 SASO Pro</th>
-    <th>Season SA Master</th>
+    <th><a href="s2dlc_sa_p" className="class1">SA Pro</a> </th>
+    <th><a href="s2dlc_sa_p" className="class1">SASO Pro</a> </th>
+    <th><a href="s2dlc_sa_p" className="class1">Any%</a> </th>
+	<th><a href="s2dlc_sa_p" className="class1">SA Master</a> </th>
+	<th><a href="s2dlc_sa_p" className="class1">SASO Master</a> </th>
   </tr>
-  <tr>
-    <th>Season 3</th>
-    <th>Maria Anders</th>
-    <th>Germany</th>
-  </tr>
-  <tr>
-    <th>Season 1</th>
-    <th>Francisco Chang</th>
-    <th>Mexico</th>
-  </tr>
+ 
 </table>
+</center>
   </Layout>
 );
 
