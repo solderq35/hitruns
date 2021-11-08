@@ -1,18 +1,12 @@
-// @ts-nocheck
 import axios from "axios"
-import {
-    ReqRun,
-    ParsedRun,
-    ReqPlatform,
-    ReqPlayer,
-} from "../interfaces/leaderboard"
+import type { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 
 export const requestRuns: any = async () => {
-    let mapcategory: string = "rkl3no8k"
-    let difficulty: string = "4qyp9g6q"
-    let rating: string = "jqzp9k4l"
+    const mapcategory = "rkl3no8k"
+    const difficulty = "4qyp9g6q"
+    const rating = "jqzp9k4l"
 
-    let response: [string] = [
+    const response: [string] = [
         await axios.get(
             "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/" +
                 mapcategory +
@@ -23,45 +17,21 @@ export const requestRuns: any = async () => {
                 "&var-78962g08=p12dkr2q&embed=platforms%2Cplayers&timing=realtime_noloads"
         ),
     ]
-    var { data } = response[0].data
+    const { data } = response[0].data
 
     const requestedRuns: ReqRun[] = data.runs
     const requestedEmbedPlayers: ReqPlayer[] = data.players.data
 
-    // Find the platform ID of GameCube
-    const gamecubePlatform: ReqPlatform = data.platforms.data.find(
-        (platform: ReqPlatform) => platform.name === "GameCube"
-    )
-    // Find the platform ID of PC
-    const pcPlatform: ReqPlatform = data.platforms.data.find(
-        (platform: ReqPlatform) => platform.name === "PC"
-    )
-
-    // Parse and separate the requested runs into their platforms
-    const gamecubeRuns: ParsedRun[] = parseRuns(
-        requestedRuns,
-        gamecubePlatform,
-        requestedEmbedPlayers
-    )
-    const pcRuns: ParsedRun[] = parseRuns(
-        requestedRuns,
-        pcPlatform,
-        requestedEmbedPlayers
-    )
-    return [gamecubeRuns, pcRuns]
+    const pcRuns: ParsedRun[] = parseRuns(requestedRuns, requestedEmbedPlayers)
+    return [pcRuns]
 }
 
 // Converts runs as obtained from speedrun.com into an object that is easier to work with.
 export const parseRuns = (
     requestedRuns: ReqRun[],
-    platform: ReqPlatform,
     players: ReqPlayer[]
 ): ParsedRun[] => {
-    const filteredRuns: ReqRun[] = requestedRuns.filter(
-        (item) => item.run.system.platform === "8gej2n93" || "4p9zjrer"
-    )
-
-    const parsedRuns: ParsedRun[] = filteredRuns.map(
+    const parsedRuns: ParsedRun[] = requestedRuns.map(
         (item: ReqRun, i: number) => {
             let player
 
@@ -90,7 +60,7 @@ export const parseRuns = (
             }
         }
     )
-    ;<script></script>
+
     // Sort runs by their spot on the leaderboard
     parsedRuns.sort((a, b) => {
         return a.place - b.place

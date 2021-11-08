@@ -7,6 +7,9 @@ export type ReqRun = {
         comment: string | null
         date: string
         submitted: string
+        videos: {
+            links: readonly { uri: string }[]
+        }
         times: {
             primary: string | null
             primary_t: number | null

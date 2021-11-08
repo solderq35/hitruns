@@ -1,5 +1,5 @@
 import * as React from "react"
-import _ from "lodash"
+import padStart from "lodash.padstart"
 import { ParsedRun } from "../interfaces/leaderboard"
 import styles from "./LeaderboardTable.module.scss"
 
@@ -15,12 +15,12 @@ const formatTime = (inputSeconds: number): string => {
     }
 
     const hours: string = Math.floor(inputSeconds / 3600).toString()
-    const minutes: string = _.padStart(
+    const minutes: string = padStart(
         Math.floor((inputSeconds % 3600) / 60).toString(),
         2,
         "0"
     )
-    const seconds: string = _.padStart(
+    const seconds: string = padStart(
         Math.floor(inputSeconds % 60).toString(),
         2,
         "0"
@@ -33,7 +33,6 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <table width="100%" className={`${styles["leaderboard-table"]}`}>
         <thead>
             <tr className={`${styles.default}`}>
-                <th></th>
                 <th>Player</th>
                 <th className="text-right">In Game Time</th>
                 <th className="text-right">Real Time</th>

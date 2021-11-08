@@ -7,19 +7,19 @@ import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
 import { requestRuns } from "../lib/s1_sa_p_run"
 
-var linkname = "s1"
-var category = "Season 1"
-var rating = "SA"
-var diff = "Pro"
+const linkname = "s1"
+const category = "Season 1"
+const rating = "SA"
+const diff = "Pro"
 
-var ratingdropdown
+let ratingdropdown
 if (rating == "Any%") {
     ratingdropdown = "any"
 } else {
     ratingdropdown = rating.toLowerCase()
 }
 
-var diffdropdown
+let diffdropdown
 if (diff == "Pro") {
     diffdropdown = "p"
 } else if (diff == "Master") {
@@ -27,15 +27,15 @@ if (diff == "Pro") {
 } else if (diff == "") {
     diffdropdown = ""
 }
-var sap = linkname + "_sa_p"
-var sasop = linkname + "_saso_p"
-var any = linkname + "_any_"
-var sam = linkname + "_sa_m"
-var sasom = linkname + "_saso_m"
+const sap = linkname + "_sa_p"
+const sasop = linkname + "_saso_p"
+const any = linkname + "_any_"
+const sam = linkname + "_sa_m"
+const sasom = linkname + "_saso_m"
 
-var level3 = "s3_" + ratingdropdown + "_" + diffdropdown
-var level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
-var level1 = "s1_" + ratingdropdown + "_" + diffdropdown
+const level3 = "s3_" + ratingdropdown + "_" + diffdropdown
+const level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
+const level1 = "s1_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
     gamecubeRuns: ParsedRun[]
@@ -72,7 +72,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
                         </h4>
                         <center></center>
 
-                        <table class="center" width="100%" id="subcat">
+                        <table className="center" width="100%" id="subcat">
                             <tr>
                                 <th mt-2 mb-0 color-yellow d-none d-md-block>
                                     <a href={sap} className="class3">

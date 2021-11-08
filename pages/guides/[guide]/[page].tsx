@@ -10,17 +10,17 @@ import { GuideData } from '../../../interfaces/guides';
 
 type Props = {
   data: GuideData;
-};
+}
 
 const Guide = ({ data }: Props): JSX.Element => {
   return (
     <Layout title={`${data.browserTitle} - ${data.header} | HobbitSpeedruns`} headerText={data.header.toLowerCase()}>
       <Row>
         {data.pages.length > 1 && (
-          <Col md="auto" sm={12}>
-            <ul className="pl-3">
+          <Col md='auto' sm={12}>
+            <ul className='pl-3'>
               {data.pages.map((page, i) => (
-                <li key={i} className="color-yellow">
+                <li key={i} className='color-yellow'>
                   <Link href={`../${page.guidePath.replace('.md', '')}`}>{page.header}</Link>
                 </li>
               ))}

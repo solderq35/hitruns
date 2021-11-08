@@ -1,33 +1,14 @@
-// @ts-nocheck
-import { GetStaticProps } from "next"
-import { Row, Col } from "react-bootstrap"
-import { requestRuns } from "../lib/runs"
-import axios from "axios"
-import {
-    ReqRun,
-    ParsedRun,
-    ReqPlatform,
-    ReqPlayer,
-} from "../interfaces/leaderboard"
-import ReactPlayer from "react-player"
 import Dropdown from "react-bootstrap/Dropdown"
-
 import Layout from "../components/Layout"
-import LeaderboardTable from "../components/LeaderboardTable"
 
-type Props = {
-    gamecubeRuns: ParsedRun[]
-    pcRuns: ParsedRun[]
-}
-
-const IndexPage = ({ gamecubeRuns, pcRuns }: Props): JSX.Element => (
+const IndexPage = (): JSX.Element => (
     <Layout title="Home || HitRuns" headerText="HITMAN 3 SPEEDRUNS">
         <Dropdown>
             <Dropdown.Toggle variant="warning" id="dropdown-basic">
                 Full Game Category Select
             </Dropdown.Toggle>
 
-            <Dropdown.Menu variant="dark">
+            <Dropdown.Menu>
                 <div className="dmenu">
                     <Dropdown.Item href="s3_sa_p" className="class2">
                         Season 3
@@ -42,9 +23,7 @@ const IndexPage = ({ gamecubeRuns, pcRuns }: Props): JSX.Element => (
             </Dropdown.Menu>
         </Dropdown>
 
-        <center>
-            <h2>Welcome to HitRuns</h2>
-        </center>
+        <h2>Welcome to HitRuns</h2>
 
         <p>
             This is a mirror for the{" "}
@@ -86,13 +65,5 @@ const IndexPage = ({ gamecubeRuns, pcRuns }: Props): JSX.Element => (
         </p>
     </Layout>
 )
-export const getStaticProps: GetStaticProps = async () => {
-    const [gamecubeRuns, pcRuns] = await requestRuns()
-
-    return {
-        props: { gamecubeRuns, pcRuns },
-        revalidate: 300,
-    }
-}
 
 export default IndexPage

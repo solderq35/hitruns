@@ -10,16 +10,15 @@ import Layout from "../components/Layout"
 import LeaderboardTable from "../components/LeaderboardTable"
 
 type Props = {
-    gamecubeRuns: ParsedRun[]
     pcRuns: ParsedRun[]
 }
 
 const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <Layout title="Home | HobbitSpeedruns" headerText="HITMAN 3 SPEEDRUNS">
         <center>
-            <table class="center" width="100%" id="subcat">
+            <table className="center" width="100%" id="subcat">
                 <tr>
-                    <th mt-2 mb-0 color-yellow d-none d-md-block>
+                    <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                         <a href="s2dlc_sa_p" className="class3">
                             SA Pro
                         </a>{" "}
@@ -51,10 +50,10 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-    const [gamecubeRuns, pcRuns] = await requestRuns()
+    const [pcRuns] = await requestRuns()
 
     return {
-        props: { gamecubeRuns, pcRuns },
+        props: { pcRuns },
         revalidate: 300,
     }
 }

@@ -7,19 +7,19 @@ import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
 import { requestRuns } from "../lib/s1_saso_m_run"
 
-var linkname = "s1"
-var category = "Season 1"
-var rating = "SASO"
-var diff = "Master"
+const linkname = "s1"
+const category = "Season 1"
+const rating = "SASO"
+const diff = "Master"
 
-var ratingdropdown
+let ratingdropdown
 if (rating == "Any%") {
     ratingdropdown = "any"
 } else {
     ratingdropdown = rating.toLowerCase()
 }
 
-var diffdropdown
+let diffdropdown
 if (diff == "Pro") {
     diffdropdown = "p"
 } else if (diff == "Master") {
@@ -27,21 +27,21 @@ if (diff == "Pro") {
 } else if (diff == "") {
     diffdropdown = ""
 }
-var sap = linkname + "_sa_p"
-var sasop = linkname + "_saso_p"
-var any = linkname + "_any_"
-var sam = linkname + "_sa_m"
-var sasom = linkname + "_saso_m"
+const sap = linkname + "_sa_p"
+const sasop = linkname + "_saso_p"
+const any = linkname + "_any_"
+const sam = linkname + "_sa_m"
+const sasom = linkname + "_saso_m"
 
-var level3 = "s3_" + ratingdropdown + "_" + diffdropdown
-var level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
-var level1 = "s1_" + ratingdropdown + "_" + diffdropdown
+const level3 = "s3_" + ratingdropdown + "_" + diffdropdown
+const level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
+const level1 = "s1_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
-    gamecubeRuns: ParsedRun[]
+    pcRuns: ParsedRun[]
 }
 
-const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
+const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
     return (
         <Layout
             title="Leaderboard || HitRuns"
@@ -70,31 +70,30 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
                         <h4 className="text-center">
                             {category} {rating} {diff}
                         </h4>
-                        <center></center>
 
-                        <table class="center" width="100%" id="subcat">
+                        <table className="center" width="100%" id="subcat">
                             <tr>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                                     <a href={sap} className="class3">
                                         SA Pro
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                                     <a href={sasop} className="class3">
                                         SASO Pro
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                                     <a href={any} className="class3">
                                         Any
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                                     <a href={sam} className="class3">
                                         SA Master
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                                     <a href={sasom} className="class3">
                                         SASO Master
                                     </a>{" "}
@@ -104,7 +103,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
                     </center>
                     <center></center>
                     &nbsp &nbsp
-                    <LeaderboardTable runs={gamecubeRuns} />
+                    <LeaderboardTable runs={pcRuns} />
                 </Col>
                 //{" "}
                 <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto">
@@ -118,10 +117,10 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const [gamecubeRuns] = await requestRuns()
+    const [pcRuns] = await requestRuns()
 
     return {
-        props: { gamecubeRuns },
+        props: { pcRuns },
         revalidate: 300,
     }
 }
