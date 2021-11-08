@@ -118,10 +118,10 @@ const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const [gamecubeRuns] = await requestRuns()
+    const [pcRuns] = await requestRuns()
 
     return {
-        props: { gamecubeRuns },
+        props: { pcRuns },
         revalidate: 300,
     }
 }
