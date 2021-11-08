@@ -1,17 +1,15 @@
 .navigation {
-  a {
-    font-size: 1.1rem;
-    color: white !important;
-	
-    &:hover {
-      background-color: rgba(61, 61, 61, 0.8) !important;
-	  text-decoration: underline;
+    a {
+        font-size: 1.1rem;
+        color: white !important;
 
+        &:hover {
+            background-color: rgba(61, 61, 61, 0.8) !important;
+            text-decoration: underline;
+        }
     }
-  }
 }
 
-
 .navigation-toggle {
-  border: none !important;
+    border: none !important;
 }
