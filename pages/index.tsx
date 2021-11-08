@@ -57,7 +57,7 @@ const IndexPage = (): JSX.Element => (
                 target="_blank"
                 rel="noreferrer"
             >
-                HitRuns github
+                HitRuns GitHub
             </a>
             . I'm pretty amateur at coding and the original Hobbit Speedruns
             site wasn't designed to host leaderboards from a ton of categories,

@@ -38,10 +38,10 @@ const level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
 const level1 = "s1_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
-    gamecubeRuns: ParsedRun[]
+    runs: ParsedRun[]
 }
 
-const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
+const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
             title="Leaderboard || HitRuns"
@@ -104,7 +104,7 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
                     </center>
                     <center></center>
                     &nbsp &nbsp
-                    <LeaderboardTable runs={gamecubeRuns} />
+                    <LeaderboardTable runs={runs} />
                 </Col>
                 //{" "}
                 <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto">
@@ -118,10 +118,10 @@ const Leaderboard = ({ gamecubeRuns }: Props): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const [gamecubeRuns] = await requestRuns()
+    const [runs] = await requestRuns()
 
     return {
-        props: { gamecubeRuns },
+        props: { runs },
         revalidate: 300,
     }
 }

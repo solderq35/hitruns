@@ -74,7 +74,7 @@ const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
 
                         <table className="center" width="100%" id="subcat">
                             <tr>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                                     <a href={sap} className="class3">
                                         SA Pro
                                     </a>{" "}
