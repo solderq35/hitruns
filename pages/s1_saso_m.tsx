@@ -33,15 +33,16 @@ const any = linkname + "_any_"
 const sam = linkname + "_sa_m"
 const sasom = linkname + "_saso_m"
 
+const level4 = "trilogy_" + ratingdropdown + "_" + diffdropdown
 const level3 = "s3_" + ratingdropdown + "_" + diffdropdown
 const level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
 const level1 = "s1_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
-    pcRuns: ParsedRun[]
+    runs: ParsedRun[]
 }
 
-const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
+const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
             title="Leaderboard || HitRuns"
@@ -58,42 +59,48 @@ const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
                             Season 3
                         </Dropdown.Item>
                         <Dropdown.Item href={level2} className="class2">
-                            Season 2
+                            Season 2 w/ DLC
                         </Dropdown.Item>
                         <Dropdown.Item href={level1} className="class2">
                             Season 1
                         </Dropdown.Item>
+						<Dropdown.Item href={level4} className="class2">
+                            Trilogy Campaign
+                        </Dropdown.Item>
                     </Dropdown.Menu>
+					
                 </Dropdown>
+				
                 <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
                     <center>
                         <h4 className="text-center">
                             {category} {rating} {diff}
                         </h4>
+                        <center></center>
 
                         <table className="center" width="100%" id="subcat">
                             <tr>
-                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
                                     <a href={sap} className="class3">
                                         SA Pro
                                     </a>{" "}
                                 </th>
-                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
                                     <a href={sasop} className="class3">
                                         SASO Pro
                                     </a>{" "}
                                 </th>
-                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
                                     <a href={any} className="class3">
-                                        Any
+                                        Any%
                                     </a>{" "}
                                 </th>
-                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
                                     <a href={sam} className="class3">
                                         SA Master
                                     </a>{" "}
                                 </th>
-                                <th className="mt-2 mb-0 color-yellow d-none d-md-block">
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
                                     <a href={sasom} className="class3">
                                         SASO Master
                                     </a>{" "}
@@ -103,7 +110,7 @@ const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
                     </center>
                     <center></center>
                     &nbsp &nbsp
-                    <LeaderboardTable runs={pcRuns} />
+                    <LeaderboardTable runs={runs} />
                 </Col>
                 //{" "}
                 <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto">
@@ -117,10 +124,10 @@ const Leaderboard = ({ pcRuns }: Props): JSX.Element => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const [pcRuns] = await requestRuns()
+    const [runs] = await requestRuns()
 
     return {
-        props: { pcRuns },
+        props: { runs },
         revalidate: 300,
     }
 }

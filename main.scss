@@ -97,6 +97,10 @@ h2 {
     overflow-y: auto;
 }
 
+.drop1 {
+padding-right: 88vh;
+}
+
 @font-face {
     font-family: "DejavuSans";
     src: url("./public/fonts/DejaVuSans.woff2") format("woff2"),
@@ -146,5 +150,7 @@ td {
     text-align: center;
     border: 3px transparent;
 }
+
+
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");

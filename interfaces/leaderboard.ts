@@ -1,15 +1,18 @@
 export type ReqRun = {
-    place: number
+	place: number;
     run: {
         id: string
         weblink: string
-        category: string
+        category: any
+		values: string
         comment: string | null
         date: string
+		fullgamediff: string
         submitted: string
         videos: {
             links: readonly { uri: string }[]
         }
+		
         times: {
             primary: string | null
             primary_t: number | null
@@ -55,6 +58,7 @@ export type ParsedRun = {
     id: string
     player: string | undefined
     date: string
+	fullgamediff: string
     weblink: string
     realtime: number
     realtime_noloads: number

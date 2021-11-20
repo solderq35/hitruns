@@ -5,12 +5,12 @@ import Layout from "../components/Layout"
 import LeaderboardTable from "../components/LeaderboardTable"
 import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
-import { requestRuns } from "../lib/s1_sa_m_run"
+import { requestRuns } from "../lib/trilogy_saso_p_run"
 
-const linkname = "s1"
-const category = "Season 1"
-const rating = "SA"
-const diff = "Master"
+const linkname = "trilogy"
+const category = "Trilogy Campaign"
+const rating = "SASO"
+const diff = "Pro"
 
 let ratingdropdown
 if (rating == "Any%") {
@@ -49,7 +49,8 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
             headerText="FULL GAME LEADERBOARD"
         >
             <Row>
-                <Dropdown>
+
+                <Dropdown className="drop1">
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Full Game Category Select
                     </Dropdown.Toggle>
@@ -70,7 +71,30 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                     </Dropdown.Menu>
 					
                 </Dropdown>
-				
+
+				<Dropdown className="drop2">
+                    <Dropdown.Toggle variant="warning" id="dropdown-basic">
+                        Individual Levels Category Select
+                    </Dropdown.Toggle>
+
+
+                    <Dropdown.Menu variant="dark">
+                        <Dropdown.Item href={level3} className="class2">
+                            Season 3
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level2} className="class2">
+                            Season 2 w/ DLC
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level1} className="class2">
+                            Season 1
+                        </Dropdown.Item>
+						<Dropdown.Item href={level4} className="class2">
+                            Trilogy Campaign
+                        </Dropdown.Item>
+                    </Dropdown.Menu>
+					
+                </Dropdown>
+
                 <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
                     <center>
                         <h4 className="text-center">

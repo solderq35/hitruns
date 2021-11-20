@@ -5,12 +5,12 @@ import Layout from "../components/Layout"
 import LeaderboardTable from "../components/LeaderboardTable"
 import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
-import { requestRuns } from "../lib/s1_sa_m_run"
+import { requestRuns } from "../lib/trilogy_sa_p_run"
 
-const linkname = "s1"
-const category = "Season 1"
+const linkname = "trilogy"
+const category = "Trilogy Campaign"
 const rating = "SA"
-const diff = "Master"
+const diff = "Pro"
 
 let ratingdropdown
 if (rating == "Any%") {
@@ -49,6 +49,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
             headerText="FULL GAME LEADERBOARD"
         >
             <Row>
+			
                 <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Full Game Category Select
@@ -70,6 +71,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                     </Dropdown.Menu>
 					
                 </Dropdown>
+				
 				
                 <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
                     <center>

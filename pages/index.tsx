@@ -19,6 +19,9 @@ const IndexPage = (): JSX.Element => (
                     <Dropdown.Item href="s1_sa_p" className="class2">
                         Season 1
                     </Dropdown.Item>
+					<Dropdown.Item href="trilogy_sa_p" className="class2">
+                        Trilogy Campaign
+                    </Dropdown.Item>
                 </div>
             </Dropdown.Menu>
         </Dropdown>

@@ -5,12 +5,12 @@ import Layout from "../components/Layout"
 import LeaderboardTable from "../components/LeaderboardTable"
 import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
-import { requestRuns } from "../lib/s1_sa_m_run"
+import { requestRuns } from "../lib/s2nodlc_saso_p_run"
 
-const linkname = "s1"
-const category = "Season 1"
-const rating = "SA"
-const diff = "Master"
+const linkname = "s2nodlc"
+const category = "Season 2 (no DLC)"
+const rating = "SASO"
+const diff = "Pro"
 
 let ratingdropdown
 if (rating == "Any%") {

@@ -6,7 +6,7 @@ export const parseRuns = (
     players: ReqPlayer[]
 ): ParsedRun[] => {
     const parsedRuns: ParsedRun[] = requestedRuns.map(
-        (item: ReqRun, i: number) => {
+        (item: ReqRun) => {
             let player
 
             // Check if the user has a registered account, if so find the correct username for the account id
@@ -17,12 +17,22 @@ export const parseRuns = (
             } else if (item.run.players[0]?.rel == "guest") {
                 player = item.run.players[0].name
             }
+			if (item.run.values["5lypzk9l"]=="4qyp9g6q")
+				{
+				item.run.values["5lypzk9l"]="Pro";
+				}
+			if (item.run.values["5lypzk9l"]=="mlnw9jol")
+				{
+				item.run.values["5lypzk9l"]="Master";
+				}
             return {
-                place: i + 1,
+				
+                place: item.place,
                 id: item.run.id,
                 player,
                 date: item.run.date,
-                weblink: item.run.videos.links[0].uri,
+				fullgamediff: item.run.values["5lypzk9l"]  || 0,
+				weblink: item.run.videos.links[0].uri,
 
                 realtime_noloads: item.run.times.realtime_noloads_t || 0,
                 //var tester = item.run.players[0]?.rel;
