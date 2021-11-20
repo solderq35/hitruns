@@ -50,7 +50,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
         >
             <Row>
 
-                <Dropdown className="drop1">
+                <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Full Game Category Select
                     </Dropdown.Toggle>
@@ -72,7 +72,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
 					
                 </Dropdown>
 
-				<Dropdown className="drop2">
+				<Dropdown className="justify-content-end" style={{ width: "100%" }}>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Individual Levels Category Select
                     </Dropdown.Toggle>
