@@ -37,7 +37,7 @@ const level1 = "s1_" + ratingdropdown + "_" + diffdropdown
 const level2 = "s2dlc_" + ratingdropdown + "_" + diffdropdown
 const level3 = "s3_" + ratingdropdown + "_" + diffdropdown
 const level4 = "trilogy_" + ratingdropdown + "_" + diffdropdown
-const level5 = "patientzero_" + ratingdropdown + "_" + diffdropdown
+const level5 = "patientzero_" + ratingdropdown + "_" + "p"
 const level6 = "s2nodlc_" + ratingdropdown + "_" + diffdropdown
 const level7 = "dubai_" + ratingdropdown + "_" + diffdropdown
 const level8 = "dartmoor_" + ratingdropdown + "_" + diffdropdown
@@ -104,6 +104,12 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         </Dropdown.Item>
 						<Dropdown.Item href={level4} className="class2">
                             Trilogy Campaign
+                        </Dropdown.Item>
+						<Dropdown.Item href={level5} className="class2">
+                            Patient Zero
+                        </Dropdown.Item>
+						<Dropdown.Item href={level6} className="class2">
+                            Season 2 (no DLC)
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					
@@ -183,7 +189,43 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             The Last Resort (Haven)
                         </Dropdown.Item>
 						<Dropdown.Item href={level29} className="class2">
+                            Landslide
+                        </Dropdown.Item>
+						<Dropdown.Item href={level30} className="class2">
+                            The Icon
+                        </Dropdown.Item>
+						<Dropdown.Item href={level31} className="class2">
+                            A House Built on Sand
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level32} className="class2">
                             The Source
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level33} className="class2">
+                            The Author
+                        </Dropdown.Item>
+						<Dropdown.Item href={level34} className="class2">
+                            The Vector
+                        </Dropdown.Item>
+						<Dropdown.Item href={level35} className="class2">
+                            Patient Zero Hokkaido
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level36} className="class2">
+                            Embrace of the Serpent
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level37} className="class2">
+                            Illusions of Grandeur
+                        </Dropdown.Item>
+						<Dropdown.Item href={level38} className="class2">
+                            A Silver Tongue
+                        </Dropdown.Item>
+						<Dropdown.Item href={level39} className="class2">
+                            A Bitter Pill
+                        </Dropdown.Item>
+						<Dropdown.Item href={level40} className="class2">
+                            Holiday Hoarders [Peacock]
+                        </Dropdown.Item>
+						<Dropdown.Item href={level41} className="class2">
+                            Snow Festival [Peacock]
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					

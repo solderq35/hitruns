@@ -1,15 +1,14 @@
-// @ts-nocheck
 import { GetStaticProps } from "next"
 import { ParsedRun } from "../interfaces/leaderboard"
 import Layout from "../components/Layout"
-import LeaderboardTable from "../components/LeaderboardTable"
+import LeaderboardTable from "../components/LeaderboardTableIL"
 import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
-import { requestRuns } from "../lib/s2dlc_saso_m_run"
+import { requestRuns } from "../lib/dubai_sa_m_run"
 
-const linkname = "s2dlc"
-const category = "Season 2 (w/ DLC)"
-const rating = "SASO"
+const linkname = "dubai"
+const category = "On Top of the World (Dubai)"
+const rating = "SA"
 const diff = "Master"
 
 let ratingdropdown

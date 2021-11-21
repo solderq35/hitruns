@@ -52,6 +52,10 @@ a.class4 {
     color: rgb(255, 203, 61) !important;
     font-size: 1rem;
 }
+a.class5 {
+    color: rgb(119, 244, 252) !important;
+    font-size: 3vh;
+}
 header {
     font-size: 5rem;
     font-family: "DejavuSans";
@@ -71,7 +75,9 @@ header {
 h2 {
     font-weight: 600;
 }
-
+h4{
+padding-top:0px;
+}
 .text-muted {
     color: rgb(182, 182, 182) !important;
 }
@@ -97,6 +103,9 @@ h2 {
     overflow-y: auto;
 }
 
+.dropdown{
+	padding-bottom:10px;
+}
 
 @font-face {
     font-family: "DejavuSans";
