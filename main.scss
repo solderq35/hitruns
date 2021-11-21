@@ -56,6 +56,22 @@ a.class5 {
     color: rgb(119, 244, 252) !important;
     font-size: 3vh;
 }
+a.class6 {
+    color: rgb(119, 244, 252) !important;
+    font-size: 1em;
+	
+}
+.fournotice {
+    position: absolute;
+    top: 28%;
+	left: 30%;
+	background-color: grey;
+	padding: 10px;
+	opacity: 90%;
+	border-style: solid;
+	border-color: rgb(179, 189, 47);
+	border-width: 5px;
+}
 header {
     font-size: 5rem;
     font-family: "DejavuSans";
