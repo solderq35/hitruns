@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Dropdown from "react-bootstrap/Dropdown"
 import Layout from "../components/Layout"
 

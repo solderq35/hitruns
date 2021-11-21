@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GetStaticProps } from "next"
 import { Row, Col } from "react-bootstrap"
 import { requestRuns } from "../lib/runs"

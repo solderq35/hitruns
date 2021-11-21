@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GetStaticProps } from "next"
 import { ParsedRun } from "../interfaces/leaderboard"
 import Layout from "../components/Layout"
