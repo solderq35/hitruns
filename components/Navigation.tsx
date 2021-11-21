@@ -28,7 +28,7 @@ const Navigation = ({ className }: Props): JSX.Element => (
                     </Nav.Link>
                 </Link>
                 <Link href="/il_leaderboards_sa_p" passHref>
-                    <Nav.Link className="py-2 px-3">IL Leaderboard</Nav.Link>
+                    <Nav.Link className="py-2 px-3">Level Leaderboards</Nav.Link>
                 </Link>
                 <Link href="/guides" passHref>
                     <Nav.Link className="py-2 px-3">Guides</Nav.Link>
