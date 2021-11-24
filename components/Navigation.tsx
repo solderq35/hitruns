@@ -22,21 +22,11 @@ const Navigation = ({ className }: Props): JSX.Element => (
                 <Link href="/" passHref>
                     <Nav.Link className="py-2 px-3">Home</Nav.Link>
                 </Link>
-                <Link href="/fg_leaderboards_sa_p" passHref>
-                    <Nav.Link className="py-2 px-3">
-                        Full Game Leaderboards
-                    </Nav.Link>
-                </Link>
-                <Link href="/il_leaderboards_sa_p" passHref>
-                    <Nav.Link className="py-2 px-3">Level Leaderboards</Nav.Link>
-                </Link>
-                <Link href="/guides" passHref>
-                    <Nav.Link className="py-2 px-3">Guides</Nav.Link>
+
+                <Link href="/h3_leaderboards" passHref>
+                    <Nav.Link className="py-2 px-3">H3 Leaderboards</Nav.Link>
                 </Link>
 
-                <Link href="/resources" passHref>
-                    <Nav.Link className="py-2 px-3">Resources</Nav.Link>
-                </Link>
                 <a
                     href="https://speedrun.com/hitman_3"
                     className="py-2 px-3"

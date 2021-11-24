@@ -1,9 +1,17 @@
 // @ts-nocheck
-import Dropdown from "react-bootstrap/Dropdown"
+import { GetStaticProps } from "next"
+import { ParsedRun } from "../interfaces/leaderboard"
 import Layout from "../components/Layout"
+import LeaderboardTable from "../components/LeaderboardTableIL"
+import { Row, Col } from "react-bootstrap"
+import Dropdown from "react-bootstrap/Dropdown"
+import { requestRuns } from "../lib/h3_chongqing_any_run"
 
-const rating = "SA"
-const diff = "Pro"
+const linkname = "h3_chongqing"
+const category = "End of an Era (Chongqing)"
+const rating = "Any%"
+const diff = ""
+
 let ratingdropdown
 if (rating == "Any%") {
     ratingdropdown = "any"
@@ -19,6 +27,11 @@ if (diff == "Pro") {
 } else if (diff == "") {
     diffdropdown = ""
 }
+const sap = linkname + "_sa_p"
+const sasop = linkname + "_saso_p"
+const any = linkname + "_any_"
+const sam = linkname + "_sa_m"
+const sasom = linkname + "_saso_m"
 
 const level1 = "h3_s1_" + ratingdropdown + "_" + diffdropdown
 const level2 = "h3_s2dlc_" + ratingdropdown + "_" + diffdropdown
@@ -62,51 +75,19 @@ const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
 const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
 const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
 
-const IndexPage = (): JSX.Element => (
-    <Layout title="Home || HitRuns" headerText="HITMAN SPEEDRUNS">
+type Props = {
+    runs: ParsedRun[]
+}
 
-        <h2>Welcome to HitRuns</h2>
+const Leaderboard = ({ runs }: Props): JSX.Element => {
+    return (
+        <Layout
+            title="Leaderboard || HitRuns"
+            headerText="H3 LEVEL LEADERBOARD"
+        >
+            <Row>
 
-        <p>
-            This is a mirror for the{" "}
-            <a
-                href="https://speedrun.com/hitman_3"
-                className="class4"
-                target="_blank"
-                rel="noreferrer"
-            >
-                Hitman 3 speedrun.com leaderboard
-            </a>
-            , and potentially other Hitman series leaderboards in the future. It is intended as a backup and/or supplement to the speedrun.com
-            leaderboards, not as a replacement. Backups of important Hitman
-            leaderboards will be hosted here, as will guides.
-        </p>
-        <p>
-            I mostly based the structure of this site from{" "}
-            <a
-                href="https://github.com/milankarman/HobbitSpeedruns"
-                className="class4"
-                target="_blank"
-                rel="noreferrer"
-            >
-                milankarman's Hobbit Speedruns site
-            </a>
-            . You can follow my progress of adapting the site structure for
-            Hitman 3 at the{" "}
-            <a
-                href="https://github.com/solderq35/hitruns"
-                className="class4"
-                target="_blank"
-                rel="noreferrer"
-            >
-                HitRuns GitHub
-            </a>
-            . I'm pretty amateur at coding and the original Hobbit Speedruns
-            site wasn't designed to host leaderboards from a ton of categories,
-            so excuse the poorly optimized code.
-        </p>
-	<h2> Hitman 3 Leaderboards </h2>
-        <Dropdown>
+                <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Hitman 3 Full Game Categories
                     </Dropdown.Toggle>
@@ -250,7 +231,65 @@ const IndexPage = (): JSX.Element => (
 					
                 </Dropdown>
 
-    </Layout>
-)
+                <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
+                    <center>
+                        <h4 className="text-center">
+                            {category} {rating} {diff}
+                        </h4>
+                        <center></center>
 
-export default IndexPage
+                        <table className="center" width="100%" id="subcat">
+                            <tr>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={sap} className="class3">
+                                        SA Pro
+                                    </a>{" "}
+                                </th>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={sasop} className="class3">
+                                        SASO Pro
+                                    </a>{" "}
+                                </th>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={any} className="class3">
+                                        Any%
+                                    </a>{" "}
+                                </th>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={sam} className="class3">
+                                        SA Master
+                                    </a>{" "}
+                                </th>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={sasom} className="class3">
+                                        SASO Master
+                                    </a>{" "}
+                                </th>
+                            </tr>
+                        </table>
+                    </center>
+                    <center></center>
+                    &nbsp &nbsp
+                    <LeaderboardTable runs={runs} />
+                </Col>
+                //{" "}
+                <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto">
+                    //
+                </Col>
+                //<Col xs={12}></Col>
+            </Row>
+            <p></p>
+        </Layout>
+    )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+    const [runs] = await requestRuns()
+
+    return {
+        props: { runs },
+        revalidate: 300,
+    }
+}
+
+export default Leaderboard

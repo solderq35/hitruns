@@ -63,48 +63,7 @@ const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
 const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
 
 const IndexPage = (): JSX.Element => (
-    <Layout title="Home || HitRuns" headerText="HITMAN SPEEDRUNS">
-
-        <h2>Welcome to HitRuns</h2>
-
-        <p>
-            This is a mirror for the{" "}
-            <a
-                href="https://speedrun.com/hitman_3"
-                className="class4"
-                target="_blank"
-                rel="noreferrer"
-            >
-                Hitman 3 speedrun.com leaderboard
-            </a>
-            , and potentially other Hitman series leaderboards in the future. It is intended as a backup and/or supplement to the speedrun.com
-            leaderboards, not as a replacement. Backups of important Hitman
-            leaderboards will be hosted here, as will guides.
-        </p>
-        <p>
-            I mostly based the structure of this site from{" "}
-            <a
-                href="https://github.com/milankarman/HobbitSpeedruns"
-                className="class4"
-                target="_blank"
-                rel="noreferrer"
-            >
-                milankarman's Hobbit Speedruns site
-            </a>
-            . You can follow my progress of adapting the site structure for
-            Hitman 3 at the{" "}
-            <a
-                href="https://github.com/solderq35/hitruns"
-                className="class4"
-                target="_blank"
-                rel="noreferrer"
-            >
-                HitRuns GitHub
-            </a>
-            . I'm pretty amateur at coding and the original Hobbit Speedruns
-            site wasn't designed to host leaderboards from a ton of categories,
-            so excuse the poorly optimized code.
-        </p>
+    <Layout title="Home || HitRuns" headerText="HITMAN 3 SPEEDRUNS">
 	<h2> Hitman 3 Leaderboards </h2>
         <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
@@ -250,6 +209,7 @@ const IndexPage = (): JSX.Element => (
 					
                 </Dropdown>
 
+        
     </Layout>
 )
 
