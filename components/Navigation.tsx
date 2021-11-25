@@ -26,6 +26,10 @@ const Navigation = ({ className }: Props): JSX.Element => (
                 <Link href="/h3_leaderboards_sa_p" passHref>
                     <Nav.Link className="py-2 px-3">H3 Leaderboards</Nav.Link>
                 </Link>
+				
+				<Link href="/guides" passHref>
+                    <Nav.Link className="py-2 px-3">Guides</Nav.Link>
+                </Link>
 
                 <a
                     href="https://speedrun.com/hitman_3"

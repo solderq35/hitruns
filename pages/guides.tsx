@@ -1,26 +1,38 @@
-import { GetStaticProps } from "next"
-
-import { getGuidesPreviews } from "../lib/guides"
-import { GuidePreview } from "../interfaces/guides"
+// @ts-nocheck
+import Dropdown from "react-bootstrap/Dropdown"
 import Layout from "../components/Layout"
-import GuideList from "../components/GuideList"
 
-type Props = {
-    guidePreviews: GuidePreview[]
-}
 
-const GuidesPage = ({ guidePreviews }: Props): JSX.Element => {
-    return (
-        <Layout title="Guides | HobbitSpeedruns" headerText="guides">
-            <GuideList guides={guidePreviews}></GuideList>
-        </Layout>
-    )
-}
+const IndexPage = (): JSX.Element => (
 
-export const getStaticProps: GetStaticProps = async () => {
-    // Gets the metadata of all guides.
-    const guidePreviews: GuidePreview[] = getGuidesPreviews()
-    return { props: { guidePreviews } }
-}
+    <Layout title="Guides || HitRuns" headerText="HITMAN SPEEDRUNS">
+	
+	<h4> Guides </h4>
+	<p>
+	<ul>
+	
+	<li>
+	<a href="/guide_faq">Beginner FAQ</a>
+	</li>
 
-export default GuidesPage
+	<li>
+	<a href="/guide_misc">Miscellaneous Tips/ Glossary</a>
+	</li>
+	
+	<li>
+	<a href="/guide_fast_anim">Fast Animations</a>
+	</li>
+	
+	<li>
+	<a href="/guide_explosions">Explosions Guide</a>
+	</li>
+
+
+	
+	
+	</ul>
+</p>
+    </Layout>
+)
+
+export default IndexPage
