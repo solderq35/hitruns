@@ -223,7 +223,7 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
 						</p>
 						<p>
                         <a href={level23} className="class5">
-                            The Three Headed Serpent (Santa Fortuna)
+                            Three Headed Serpent (Santa Fortuna)
                         </a>{" "}
 						</p>
 						<p>
