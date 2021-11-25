@@ -23,7 +23,7 @@ const Navigation = ({ className }: Props): JSX.Element => (
                     <Nav.Link className="py-2 px-3">Home</Nav.Link>
                 </Link>
 
-                <Link href="/h3_leaderboards" passHref>
+                <Link href="/h3_leaderboards_sa_p" passHref>
                     <Nav.Link className="py-2 px-3">H3 Leaderboards</Nav.Link>
                 </Link>
 

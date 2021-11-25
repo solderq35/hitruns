@@ -82,7 +82,7 @@ type Props = {
 const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
-            title="Leaderboard || HitRuns"
+            title="Hitman 3 Level Leaderboard | HitRuns"
             headerText="H3 LEVEL LEADERBOARD"
         >
             <Row>

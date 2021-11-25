@@ -8,7 +8,7 @@ import Dropdown from "react-bootstrap/Dropdown"
 import { requestRuns } from "../lib/h3_patientzero_sa_p_run"
 
 const linkname = "h3_patientzero"
-const category = "h3_Patient Zero"
+const category = "Patient Zero"
 const rating = "SA"
 const diff = "Pro"
 
@@ -82,7 +82,7 @@ type Props = {
 const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
-            title="Leaderboard || HitRuns"
+            title="Hitman 3 Full Game Leaderboard | HitRuns"
             headerText="H3 FULL GAME LEADERBOARD"
         >
             <Row>
