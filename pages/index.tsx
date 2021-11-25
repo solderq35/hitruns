@@ -108,6 +108,7 @@ const IndexPage = (): JSX.Element => (
 	<h2> Hitman 3 Leaderboards </h2>
         <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
+					
                         Hitman 3 Full Game Categories
                     </Dropdown.Toggle>
 
