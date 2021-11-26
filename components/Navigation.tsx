@@ -30,6 +30,14 @@ const Navigation = ({ className }: Props): JSX.Element => (
 				<Link href="/guides" passHref>
                     <Nav.Link className="py-2 px-3">Guides</Nav.Link>
                 </Link>
+				
+				<Link href="/resources" passHref>
+                    <Nav.Link className="py-2 px-3">Resources</Nav.Link>
+                </Link>
+				
+				<Link href="/rules" passHref>
+                    <Nav.Link className="py-2 px-3">Run Submission Rules</Nav.Link>
+                </Link>
 
                 <a
                     href="https://speedrun.com/hitman_3"
@@ -46,6 +54,15 @@ const Navigation = ({ className }: Props): JSX.Element => (
                     rel="noreferrer"
                 >
                     Github
+                </a>
+				
+				<a
+                    href="https://discord.com/invite/kVMBEZA"
+                    className="py-2 px-3"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Discord
                 </a>
             </Nav>
         </Navbar.Collapse>

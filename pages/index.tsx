@@ -78,8 +78,7 @@ const IndexPage = (): JSX.Element => (
                 Hitman 3 speedrun.com leaderboard
             </a>
             , and potentially other Hitman series leaderboards in the future. It is intended as a backup and/or supplement to the speedrun.com
-            leaderboards, not as a replacement. Backups of important Hitman
-            leaderboards will be hosted here, as will guides.
+            leaderboards, not as a replacement. Please go to speedrun.com to submit new runs to the leaderboards.
         </p>
         <p>
             I mostly based the structure of this site from{" "}

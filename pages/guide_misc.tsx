@@ -5,7 +5,12 @@ import Layout from "../components/Layout"
 const level1 = "guide_faq"
 const level2 = "guide_misc"
 const level3 = "guide_fast_anim"
-const level4 = "guide_explosions"
+const level4 = "guide_electrocution"
+const level5 = "guide_explosions"
+const level6 = "guide_lures"
+const level7 = "guide_breakable_boosting"
+const level8 = "guide_livesplit"
+const level9 = "guide_bullets"
 
 const IndexPage = (): JSX.Element => (
     <Layout title="Guides || HitRuns" headerText="HITMAN SPEEDRUNS">
@@ -23,10 +28,25 @@ const IndexPage = (): JSX.Element => (
                             Miscellaneous Tips/ Glossary
                         </Dropdown.Item>
 						<Dropdown.Item href={level3} className="class2">
-                            Fast Animations Guide
+                            Fast Animations
                         </Dropdown.Item>
 						<Dropdown.Item href={level4} className="class2">
-                            Explosions and Explosives Guide
+                            Electrocutions
+                        </Dropdown.Item>
+						<Dropdown.Item href={level5} className="class2">
+                            Explosions/ Explosives
+                        </Dropdown.Item>
+						<Dropdown.Item href={level6} className="class2">
+                            Lures
+                        </Dropdown.Item>
+						<Dropdown.Item href={level7} className="class2">
+                            Breakable Object Boosting
+                        </Dropdown.Item>
+						<Dropdown.Item href={level8} className="class2">
+                            Livesplit Guide
+                        </Dropdown.Item>
+						<Dropdown.Item href={level9} className="class2">
+                            Bullets/ Gun Mechanics
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					

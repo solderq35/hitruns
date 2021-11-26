@@ -7,27 +7,43 @@ const IndexPage = (): JSX.Element => (
 
     <Layout title="Guides || HitRuns" headerText="HITMAN SPEEDRUNS">
 	
-	<h4> Guides </h4>
+	<h2> Guides </h2>
 	<p>
 	<ul>
-	
 	<li>
-	<a href="/guide_faq">Beginner FAQ</a>
+	<a href="/guide_faq" className = "class7">Beginner FAQ</a>
 	</li>
-
 	<li>
-	<a href="/guide_misc">Miscellaneous Tips/ Glossary</a>
+	<a href="/guide_misc" className = "class7">Miscellaneous Tips/ Glossary</a>
 	</li>
 	
 	<li>
-	<a href="/guide_fast_anim">Fast Animations</a>
+	<a href="/guide_fast_anim" className = "class7">Fast Animations</a>
 	</li>
 	
 	<li>
-	<a href="/guide_explosions">Explosions Guide</a>
+	<a href="/guide_electrocution" className = "class7">Electrocutions</a>
+	</li>
+	
+	<li>
+	<a href="/guide_explosions" className = "class7">Explosions Guide</a>
 	</li>
 
+	<li>
+	<a href="/guide_lures" className = "class7">Lures</a>
+	</li>
 
+	<li>
+	<a href="/guide_breakable_boosting" className = "class7">Breakable Object Boosting</a>
+	</li>
+	
+	<li>
+	<a href="/guide_livesplit" className = "class7">Livesplit Guide</a>
+	</li>
+	
+	<li>
+	<a href="/guide_bullets" className = "class7">Bullets/ Gun Mechanics</a>
+	</li>
 	
 	
 	</ul>

@@ -4,7 +4,7 @@ import ResourceList from "../components/ResourceList"
 import resources from "../data/resources.json"
 
 const ResourcesPage = (): ReactNode => (
-    <Layout title="Resources | HobbitSpeedruns" headerText="resources">
+    <Layout title="Resources | HitRuns" headerText="HITMAN SPEEDRUNS">
         <ResourceList resources={resources}></ResourceList>
     </Layout>
 )

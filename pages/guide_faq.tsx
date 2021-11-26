@@ -6,7 +6,12 @@ import Layout from "../components/Layout"
 const level1 = "guide_faq"
 const level2 = "guide_misc"
 const level3 = "guide_fast_anim"
-const level4 = "guide_explosions"
+const level4 = "guide_electrocution"
+const level5 = "guide_explosions"
+const level6 = "guide_lures"
+const level7 = "guide_breakable_boosting"
+const level8 = "guide_livesplit"
+const level9 = "guide_bullets"
 
 
 const IndexPage = (): JSX.Element => (
@@ -25,10 +30,25 @@ const IndexPage = (): JSX.Element => (
                             Miscellaneous Tips/ Glossary
                         </Dropdown.Item>
 						<Dropdown.Item href={level3} className="class2">
-                            Fast Animations Guide
+                            Fast Animations
                         </Dropdown.Item>
 						<Dropdown.Item href={level4} className="class2">
-                            Explosions and Explosives Guide
+                            Electrocutions
+                        </Dropdown.Item>
+						<Dropdown.Item href={level5} className="class2">
+                            Explosions/ Explosives
+                        </Dropdown.Item>
+						<Dropdown.Item href={level6} className="class2">
+                            Lures
+                        </Dropdown.Item>
+						<Dropdown.Item href={level7} className="class2">
+                            Breakable Object Boosting
+                        </Dropdown.Item>
+						<Dropdown.Item href={level8} className="class2">
+                            Livesplit Guide
+                        </Dropdown.Item>
+						<Dropdown.Item href={level9} className="class2">
+                            Bullets/ Gun Mechanics
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					
@@ -57,9 +77,9 @@ const IndexPage = (): JSX.Element => (
     <p>Q: What are the optimal in-game settings to run the game?
 	A: Go to Options&gt; Gameplay &gt; HUD. Turn on Difficulty HUD (for verification purposes), Silent Assassin HUD (to see what rating you have at all times), Timer HUD (helps for timing certain kills). For Miami, you may also want to turn Simulation Quality in Graphics Settings to Base, to avoid rendering some racetrack flags.</p>
     <p>Q: How do I set up livesplit for full game runs?
-	A: We use in game time for this game, so you should consider using <a href="https://www.speedrun.com/hitman_3/guide/46anj">Livesplit Manual Game Time</a> to enter in the in game time for each level manually. Be sure to read the rules for Full Game leaderboard carefully first as well.</p>
+	A: We use in game time for this game, so you should consider using <a href="guide_livesplit">Livesplit Manual Game Time</a> to enter in the in game time for each level manually. Be sure to read the rules for Full Game leaderboard carefully first as well.</p>
     <p>Q: I am having trouble with X trick/ have a question about the leaderboard rules, can anyone help me?
-	A: Consider asking in <a href="https://discord.com/invite/kVMBEZA">Frotes Speedrun Community</a> or <a href="https://discord.gg/g27npc75kp">Hitman Runs Discord</a>. For more general advice, you can also consider looking at the <a href="https://www.speedrun.com/hitman_3/guides">other guides</a>. For questions about the rules, you can either ask in the above Discord servers, or contact a moderator directly (go to Profile -&gt; Message, or use the moderator's social media).</p>
+	A: Consider asking in <a href="https://discord.com/invite/kVMBEZA">Frotes Speedrun Community</a> or <a href="https://discord.gg/g27npc75kp">Hitman Runs Discord</a>. For more general advice, you can also consider looking at the <a href="guides">other guides</a>. For questions about the rules, you can either ask in the above Discord servers, or contact a moderator directly (go to Profile -&gt; Message, or use the moderator's social media).</p>
 	
 	</p>
 	
