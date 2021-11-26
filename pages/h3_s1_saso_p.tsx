@@ -7,7 +7,7 @@ import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
 import { requestRuns } from "../lib/h3_s1_saso_p_run"
 
-const linkname = "s1"
+const linkname = "h3_s1"
 const category = "Season 1"
 const rating = "SASO"
 const diff = "Pro"
