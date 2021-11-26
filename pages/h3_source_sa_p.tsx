@@ -83,7 +83,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
             title="Hitman 3 Level Leaderboard | HitRuns"
-            headerText="H3 FULL GAME LEADERBOARD"
+            headerText="H3 LEVEL LEADERBOARD"
         >
             <Row>
 
