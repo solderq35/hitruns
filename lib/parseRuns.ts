@@ -32,7 +32,7 @@ export const parseRuns = (
                 player,
                 date: item.run.date,
 				fullgamediff: item.run.values["5lypzk9l"]  || 0,
-				weblink: item.run.videos.links[0].uri,
+				weblink: item.run.videos.links.slice(-1)[0] .uri,
 
                 realtime_noloads: item.run.times.realtime_noloads_t || 0,
                 //var tester = item.run.players[0]?.rel;
