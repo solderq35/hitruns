@@ -26,7 +26,6 @@ export const parseRuns = (
 				item.run.values["5lypzk9l"]="Master";
 				}
             return {
-				
                 place: item.place,
                 id: item.run.id,
                 player,
