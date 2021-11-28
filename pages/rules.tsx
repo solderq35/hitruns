@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 
 const IndexPage = (): JSX.Element => (
 
-    <Layout title="Hitman 3 Run Rules || HitRuns" headerText="HITMAN SPEEDRUNS">
+    <Layout title="Hitman 3 Run Rules | HitRuns" headerText="HITMAN SPEEDRUNS">
 	
 	<center>
 	<h1>Hitman 3 Run Rules</h1>
