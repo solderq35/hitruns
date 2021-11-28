@@ -63,7 +63,7 @@ const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
 const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
 
 const IndexPage = (): JSX.Element => (
-    <Layout title="Home || HitRuns" headerText="HITMAN SPEEDRUNS">
+    <Layout title="Home | HitRuns" headerText="HITMAN SPEEDRUNS">
 
         <h2>Welcome to HitRuns</h2>
 

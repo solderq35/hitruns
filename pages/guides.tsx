@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 
 const IndexPage = (): JSX.Element => (
 
-    <Layout title="Guides || HitRuns" headerText="HITMAN SPEEDRUNS">
+    <Layout title="Guides | HitRuns" headerText="HITMAN SPEEDRUNS">
 	
 	<h2> Guides </h2>
 	<p>
