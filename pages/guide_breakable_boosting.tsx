@@ -60,23 +60,23 @@ const IndexPage = (): JSX.Element => (
     <ul>
       <li>
         <p>
-          <a href="https://youtu.be/VLHuum_tGZg?t=16">Example 1</a>:  Throw muffin near ledge to walk off it to the ground</p>
+          <a href="https://youtu.be/VLHuum_tGZg?t=16"  target="blank">Example 1</a>:  Throw muffin near ledge to walk off it to the ground</p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/dh8IuU2kTho?t=33">Example 2</a>: Throw breakable brick to get onto stair railings</p>
+          <a href="https://youtu.be/dh8IuU2kTho?t=33"  target="blank">Example 2</a>: Throw breakable brick to get onto stair railings</p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/264oMY9Ys34?t=60">Example 3</a>: Throw breakable crystal ball to walk on briefcase and get a better sniping angle</p>
+          <a href="https://youtu.be/264oMY9Ys34?t=60"  target="blank">Example 3</a>: Throw breakable crystal ball to walk on briefcase and get a better sniping angle</p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/LtnYqLLBPvs?t=3">Example 4</a>: Throw breakable violin onto suitcase, then use breaching charge to propel 47 even higher over ledge</p>
+          <a href="https://youtu.be/LtnYqLLBPvs?t=3"  target="blank">Example 4</a>: Throw breakable violin onto suitcase, then use breaching charge to propel 47 even higher over ledge</p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/J74iidO5cCg">More in depth video guide</a>
+          <a href="https://youtu.be/J74iidO5cCg"  target="blank">More in depth video guide</a>
         </p>
       </li>
     </ul>

@@ -64,12 +64,12 @@ const IndexPage = (): JSX.Element => (
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/tBnykFC3fE4?t=24">PC Example</a>
+          <a href="https://youtu.be/tBnykFC3fE4?t=24"  target="blank">PC Example</a>
         </p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/cyuw5pHubsk?t=78">Console Example</a>
+          <a href="https://youtu.be/cyuw5pHubsk?t=78"  target="blank">Console Example</a>
         </p>
       </li>
     </ul>
@@ -92,12 +92,12 @@ const IndexPage = (): JSX.Element => (
 	  <ul>
       <li>
         <p>
-          <a href="https://youtu.be/muO9Mm3yUvQ?t=14">Sink fast interact example</a>
+          <a href="https://youtu.be/muO9Mm3yUvQ?t=14"  target="blank">Sink fast interact example</a>
         </p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/muO9Mm3yUvQ?t=53">Fast exit example</a>
+          <a href="https://youtu.be/muO9Mm3yUvQ?t=53"  target="blank">Fast exit example</a>
         </p>
       </li>
     </ul>
@@ -139,22 +139,22 @@ This includes, but it not limited to, picking up items, disguise changes, draggi
 	  <ul>
       <li>
         <p>
-          <a href="https://youtu.be/KB4gU2d7938?t=89">Example of fast pickup</a>
+          <a href="https://youtu.be/KB4gU2d7938?t=89"  target="blank">Example of fast pickup</a>
         </p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/KB4gU2d7938?t=50">Example of fast disguise change</a>
+          <a href="https://youtu.be/KB4gU2d7938?t=50"  target="blank">Example of fast disguise change</a>
         </p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/4fzWz6h5mjM?t=42">Example of fast body drag</a>
+          <a href="https://youtu.be/4fzWz6h5mjM?t=42"  target="blank">Example of fast body drag</a>
         </p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/KB4gU2d7938?t=112">Example of fast exit</a>
+          <a href="https://youtu.be/KB4gU2d7938?t=112"  target="blank">Example of fast exit</a>
         </p>
       </li>
     </ul>

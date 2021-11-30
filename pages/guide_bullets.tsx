@@ -58,7 +58,10 @@ const IndexPage = (): JSX.Element => (
 
 <p>Disclaimer- Guide ported from H2. The tricks here seem to work in H3 as well so far based on personal testing, but keep in mind some small things may be altered.</p>
     <p>
-      <a href="https://youtu.be/NNprCg14ibk">Supplemental video guide with voiceover from TJGM</a>
+      <a href="https://youtu.be/4LvB4h3RyDE"  target="blank">Supplemental video guide with text commentary by BluntzNBeatz</a>
+    </p>
+	<p>
+      <a href="https://youtu.be/NNprCg14ibk"  target="blank">Supplemental video guide with voiceover from TJGM</a>
     </p>
     <h2 id="useful-guns">Useful Guns</h2>
     <p>If you do not know how to unlock any of the below weapons, check Hitman Wiki's Unlocks/ Mastery guide in Resources.</p>
@@ -69,27 +72,27 @@ const IndexPage = (): JSX.Element => (
     <p>DAK X2 Covert and ICA 19 F/A stealth are silenced handheld guns that can shoot open almost any swinging door, physical or electric lock alike. However, since they are also full auto, they are less useful for precise bullet distractions.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/OuoNO_5_oGI?list=PLflusD4O8jzNubvmK7dMBgbZ6Vsl-qiwR&amp;t=48">Example of shooting open a door with ICA 19 F/A stealth</a>
+        <a href="https://youtu.be/OuoNO_5_oGI?list=PLflusD4O8jzNubvmK7dMBgbZ6Vsl-qiwR&amp;t=48"  target="blank">Example of shooting open a door with ICA 19 F/A stealth</a>
       </li>
     </ul>
     <h2 id="sniper-rifles">Sniper Rifles</h2>
-    <p>Sniper Properties Data Table: <a href="https://i.ibb.co/wyVvGrt/image0.jpg">https://i.ibb.co/wyVvGrt/image0.jpg</a>
+    <p><a href="https://media.discordapp.net/attachments/802883476948254750/915155863579271188/unknown.png" target="blank">Sniper Properties Data Table (from muddye)</a>
 	</p>
 	<p>
 Sniper rifles can also shoot swinging doors open, so you may not need a lockpick or disposable scrambler if you're already bringing a sniper rifle.</p>
     <ul>
       <li>
-        <a href="https://www.youtube.com/watch?v=yoMQOQgOWQQ&amp;list=PLflusD4O8jzNubvmK7dMBgbZ6Vsl-qiwR&amp;index=2">Example of shooting door open with sniper rifle</a>
+        <a href="https://www.youtube.com/watch?v=yoMQOQgOWQQ&amp;list=PLflusD4O8jzNubvmK7dMBgbZ6Vsl-qiwR&amp;index=2" target="blank">Example of shooting door open with sniper rifle</a>
       </li>
     </ul>
     <p>Sieger 300 Ghost is usually the best all-around sniper to to having fast unpack, maximum zoom, maximum damage (can blow up car in two shots from any distance, OHKO any NPC from any distance), and also being the most silent (subsonic perk).</p>
     <p>However, the non-Ghost Sieger 300 variants can also be useful for times when you <strong>do not</strong> want to one hit kill people.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/1_jXK9Pbg8E?t=37">Example of using Sieger 300 Advanced on Ljudmilla- Bullet does not kill Ljudmilla on impact, but pushes her into water for fall accident.</a>
+        <a href="https://youtu.be/1_jXK9Pbg8E?t=37" target="blank">Example of using Sieger 300 Advanced on Ljudmilla- Bullet does not kill Ljudmilla on impact, but pushes her into water for fall accident.</a>
       </li>
       <li>
-        <a href="https://youtu.be/CASEkNKCG8I?t=236">Example of using Sieger 300 to avoid killing scientist near virus when shooting virus</a>
+        <a href="https://youtu.be/CASEkNKCG8I?t=236" target="blank">Example of using Sieger 300 to avoid killing scientist near virus when shooting virus</a>
       </li>
     </ul>
     <p>Hackl Levithan Sniper Rifle Covert is also worth considering if you want a piercing sniper rifle (only silenced sniper rifle with piercing and fast unpack animation).</p>
@@ -97,38 +100,38 @@ Sniper rifles can also shoot swinging doors open, so you may not need a lockpick
     <p>Kalmer does not fire bullets, but its tranquilizing effect is very useful. Besides the obvious application of public knockouts, guards are temporarily unable to frisk you or spot you trespassing while they are looking at a body unconscious from a Kalmer.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/m6UieQE2VD8?t=99">Example of using Kalmer to avoid getting spotted for trespassing</a>
+        <a href="https://youtu.be/m6UieQE2VD8?t=99" target="blank">Example of using Kalmer to avoid getting spotted for trespassing</a>
       </li>
     </ul>
     <p>Sieker does not fire bullets, but its emetic effect is very useful. Besides the obvious application of making NPC's go to the toilet, it is also useful for just making NPC's blind and leave the area for more than a minute.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/ITWmeusSv48?t=33">Example of using Sieker on gardener so he cannot spot me later</a>
+        <a href="https://youtu.be/ITWmeusSv48?t=33" target="blank">Example of using Sieker on gardener so he cannot spot me later</a>
       </li>
     </ul>
     <h2 id="bullet-distractions-1-bullet">Bullet Distractions (1 bullet)</h2>
     <p>The most obvious use of bullet distractions is to briefly turn an NPC around, or lure them to a particular spot.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/gp_m9OzlHl0?t=108">Example of 4 bullet distractions to turn NPC around</a>
+        <a href="https://youtu.be/gp_m9OzlHl0?t=108" target="blank">Example of 4 bullet distractions to turn NPC around</a>
       </li>
     </ul>
     <p>A lesser known application of bullet distractions is to shoot the top of a wall/ ceiling to lure NPC's upstairs. This can be used not only to lure NPC's to another floor, but to just make an NPC leave the area for an extended period of time.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/PxxPBKvBBNQ?t=24">Example of ceiling lure</a> (notice how lady goes upstairs)</li>
+        <a href="https://youtu.be/PxxPBKvBBNQ?t=24" target="blank">Example of ceiling lure</a> (notice how lady goes upstairs)</li>
     </ul>
     <h2 id="shot-bullet-panic">2 shot bullet panic</h2>
     <p>A common use of 2 shot bullet panic is to panic civilians so they can't spot you trespassing.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/gp_m9OzlHl0?t=241">Example bullet panic to avoid getting caught trespassing</a>
+        <a href="https://youtu.be/gp_m9OzlHl0?t=241" target="blank">Example bullet panic to avoid getting caught trespassing</a>
       </li>
     </ul>
     <p>2 shot bullet panic can also be used to keep multiple NPC's looking in the direction you shot at for longer than if you just fired one shot. Beware this is risky, as NPC reactions to two bullets can be RNG.</p>
     <ul>
       <li>
-        <a href="https://youtu.be/CASEkNKCG8I?t=387">Example of bullet panic to keep guards turned to the right</a>
+        <a href="https://youtu.be/CASEkNKCG8I?t=387" target="blank">Example of bullet panic to keep guards turned to the right</a>
       </li>
     </ul>
     <h2 id="triple-shot-panic">Triple shot panic</h2>
@@ -138,7 +141,7 @@ Sniper rifles can also shoot swinging doors open, so you may not need a lockpick
     </p>
     <ul>
       <li>
-        <a href="https://youtu.be/-TNnwIawiEw?t=51">Example of using triple shot panic to blind them to trespassing</a>
+        <a href="https://youtu.be/-TNnwIawiEw?t=51" target="blank">Example of using triple shot panic to blind them to trespassing</a>
       </li>
     </ul>
     <h2 id="body-shots">Body shots</h2>
@@ -149,21 +152,28 @@ Sniper rifles can also shoot swinging doors open, so you may not need a lockpick
     <ul>
       <li>
         <p>
-          <a href="https://youtu.be/VZhx78JpAVU?t=137">Example of body shotting a guard to make them blind to trespassing</a>
+          <a href="https://youtu.be/VZhx78JpAVU?t=137" target="blank">Example of body shotting a guard to make them blind to trespassing</a>
         </p>
       </li>
       <li>
         <p>
-          <a href="https://youtu.be/dntnt3NWekM?t=50">Example of body shotting a civilian to make them blind to illegal actions</a>
+          <a href="https://youtu.be/dntnt3NWekM?t=50" target="blank">Example of body shotting a civilian to make them blind to illegal actions</a>
         </p>
       </li>
     </ul>
     <h2 id="stored-shot">Stored Shot</h2>
     <p>While using Instinct, press the "fire gun" button (left click on PC). When you come out of Instinct and aim (right click on PC), you will perform a shot with zero stutters.</p>
     <h2 id="zoomed-out-aim">Zoomed out aim</h2>
-    <p>Sometimes you will get strangely zoomed out camera when aiming with pistol (<a href="https://youtu.be/fEMuIEDegTE?t=69">example</a>).</p>
+    <p>Sometimes you will get strangely zoomed out camera when aiming with pistol (<a href="https://youtu.be/fEMuIEDegTE?t=69" target="blank">example</a>).</p>
     <p>To prevent this, crouch and uncrouch before aiming.</p>
 
+	<h2 id="miscgraphs">Miscellaneous Gun Stats (from muddye)</h2>
+	<p>
+	<a href="https://media.discordapp.net/attachments/610476804448452618/868583868729524264/pistoldmg.png" target="blank">Non Sniper Gun Stats (from muddye)</a>
+	</p>
+	<p>
+	<a href="https://media.discordapp.net/attachments/845296311800561694/845841968424681472/DifficultyDMG.png" target="blank">Damage Multiplier values for each Difficulty (from muddye)</a>
+	</p>
 </p>
 	
 )

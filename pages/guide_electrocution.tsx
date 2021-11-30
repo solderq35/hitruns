@@ -58,7 +58,7 @@ const IndexPage = (): JSX.Element => (
 
  <p>Disclaimer- Guide ported from H2. The tricks here seem to work in H3 as well so far based on personal testing, but keep in mind some small things may be altered.</p>
     <p>
-      <a href="https://i.ibb.co/CVr8b8Z/electrotable.png">https://i.ibb.co/CVr8b8Z/electrotable.png</a>
+      <a href="https://i.ibb.co/CVr8b8Z/electrotable.png"  target="blank">https://i.ibb.co/CVr8b8Z/electrotable.png</a>
     </p>
     <p>Note that micro taser can electrocute civilian NPC's without a puddle, if placed in mailbox.</p>
 

@@ -56,23 +56,23 @@ const IndexPage = (): JSX.Element => (
 	<h2> Basic In Game Time Livesplit Tutorial </h2>
 <p>
 
-<p>Download Livesplit <a href="https://livesplit.org/downloads/">here</a></p>
+<p>Download Livesplit <a href="https://livesplit.org/downloads/"  target="blank">here</a></p>
     <p>Unzip the folder of the Livesplit Download, and then click on the Livesplit Application to start.</p>
     <p>Right click on main Livesplit application window, go to "Edit Splits". Here you can enter information about the game name, category, and splits for each map to your liking. Be sure to select the "Game Time" option. Enter your estimated in game time splits for each map in "segment time" column.</p>
     <p>
 
-      <a href="https://i.ibb.co/TrJWrq5/splitsedit.png">https://i.ibb.co/TrJWrq5/splitsedit.png</a>
+      <a href="https://i.ibb.co/TrJWrq5/splitsedit.png"  target="blank">https://i.ibb.co/TrJWrq5/splitsedit.png</a>
     </p>
     <p>Click "okay", then right click the main Livesplit application window and click on "save splits as" to save the splits for later use.</p>
     <p>Right click on main Livesplit application window, and go to "Edit Layout". Click on the "+" symbol, then go to "Control", then "Manual Game Time".</p>
     <p>
-      <a href="https://i.ibb.co/Mn4qC8w/editlayout.png">https://i.ibb.co/Mn4qC8w/editlayout.png</a>
+      <a href="https://i.ibb.co/Mn4qC8w/editlayout.png"  target="blank">https://i.ibb.co/Mn4qC8w/editlayout.png</a>
     </p>
     <p>Click "okay", then right click the main Livesplit application window and click on "save layout as" to save the splits for later use.</p>
     <p>Right click on main Livesplit application window, and go to "Compare Against", then "Game Time".</p>
     <p>Right click on main Livesplit application window, and go to "Settings", and adjust hotkeys as needed. "Numpad 1" (have Num Lock on) is the default for starting and splitting, if you have followed the steps above, hitting the Numpad 1 key will bring up a prompt to enter game time manually.  Type your time for the given level in and hit Enter key to save the split time for the level. Repeat after each level.</p>
     <p>
-      <a href="https://i.ibb.co/zsGmxJf/entergametime.png">https://i.ibb.co/zsGmxJf/entergametime.png</a>
+      <a href="https://i.ibb.co/zsGmxJf/entergametime.png"  target="blank">https://i.ibb.co/zsGmxJf/entergametime.png</a>
     </p>
     <p>Do not X out or minimize the "Enter Game Time" window as this may cause problems.</p>
     <p>If you mess up, you can reset the run (numpad 3 by default).</p>
