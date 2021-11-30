@@ -5,8 +5,8 @@ import { parseRuns } from "./parseRuns"
 export const requestRuns: any = async () => {
 	const mapcategory = "ewpnpkk9"
 	const rating = "7kj890zd"
-	const difficultyvarname = "p854xo3l"
-    const difficulty = "gq7jpmpq"
+	const difficultyvarname = "r8r1dv7n"
+    const difficulty = "21dz5xpl"
 
     const response = await axios.get(
         "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/level/" +
