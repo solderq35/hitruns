@@ -82,9 +82,13 @@ const IndexPage = (): JSX.Element => (
     <p>For PC, this trick can be used for any prompt tied to the default interact button (G). This includes, but is not limited to, exits, turning on sinks, turning on radios, and unlocking doors.</p>
     <ul>
       <li>
-        <p>To do the trick, press inventory (default button I), then the interact button (G) in quick succession when in front of an interact prompt. This trick will save about half a second per use, enabling you to instantly trigger the prompt instead of waiting to fill up circle.</p>
+        <p>To do the trick, press and hold inventory (default button I) when in front of an interact prompt. While inventory button is held down, tap on the inventory key (G).
+	</p>
       </li>
 	  </ul>
+	  <p>
+	  This trick will save about half a second per use, enabling you to instantly trigger the prompt instead of waiting to fill up circle.
+	  </p>
 	  	  <h5>
 	  
 	  PC Video Examples
