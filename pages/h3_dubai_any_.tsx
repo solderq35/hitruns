@@ -32,6 +32,7 @@ const sasop = linkname + "_saso_p"
 const any = linkname + "_any_"
 const sam = linkname + "_sa_m"
 const sasom = linkname + "_saso_m"
+const refreshlink = linkname + "_" + ratingdropdown + "_" + diffdropdown
 
 const level1 = "h3_s1_" + ratingdropdown + "_" + diffdropdown
 const level2 = "h3_s2dlc_" + ratingdropdown + "_" + diffdropdown
@@ -267,6 +268,14 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                                 </th>
                             </tr>
                         </table>
+						<p className ="class1">
+						Click <a href={refreshlink} className="class9">
+                                        here
+                                    </a>{" "} if leaderboard is out of date relative to <a href="https://www.speedrun.com/hitman_3" className="class9">
+									speedrun.com
+							</a>
+							.							
+						</p>
                     </center>
                     <center></center>
                     &nbsp &nbsp

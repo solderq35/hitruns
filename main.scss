@@ -27,6 +27,15 @@ tr {
     font-family: "Open Sans", "Calibri", sans-serif;
 }
 
+p.class1 {
+    font-size: 2.5vh;
+	padding-top:2vh;
+	margin: 0;
+}
+p.class9 {
+    font-size: 1.3rem;
+}
+
 h4.text-center {
     font-size: 2.5rem;
 }
@@ -69,9 +78,9 @@ a.class8 {
     color: rgb(255, 203, 61) !important;
     font-size: 1rem;
 }
-
-p.class9 {
-    font-size: 1.3rem;
+a.class9 {
+    color: rgb(255, 203, 61) !important;
+    font-size: 2.5vh;
 }
 .fournotice {
     position: absolute;
@@ -171,7 +180,7 @@ td {
     border: 3px solid white;
     padding-right: 10px;
     padding-left: 10px;
-    // width: 400px;
+    //width: 100px;
 }
 
 table.table1,
