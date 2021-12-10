@@ -256,16 +256,9 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                                         Any%
                                     </a>{" "}
                                 </th>
-
                             </tr>
                         </table>
-                    </center>
-                    <center></center>
-                    &nbsp &nbsp
-                                      </center>
-                    <center></center>
-                    &nbsp &nbsp
-                                        </center>
+						                    </center>
                     <center></center>
                     &nbsp &nbsp
                     <LeaderboardTable runs={runs} />
