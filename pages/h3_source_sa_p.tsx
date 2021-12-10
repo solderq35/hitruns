@@ -46,7 +46,7 @@ const level9 = "h3_berlin_" + ratingdropdown + "_" + diffdropdown
 const level10 = "h3_chongqing_" + ratingdropdown + "_" + diffdropdown
 const level11 = "h3_mendoza_" + ratingdropdown + "_" + diffdropdown
 const level12 = "h3_romania_" + ratingdropdown + "_" + diffdropdown
-const level13 = "h3_icon_" + ratingdropdown + "_" + "p"
+const level13 = "h3_freeform_" + ratingdropdown + "_" + "p"
 const level14 = "h3_finaltest_" + ratingdropdown + "_" + "p"
 const level15 = "h3_paris_" + ratingdropdown + "_" + diffdropdown
 const level16 = "h3_sapienza_" + ratingdropdown + "_" + diffdropdown
@@ -142,7 +142,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             Untouchable (Romania)
                         </Dropdown.Item>
                         <Dropdown.Item href={level13} className="class2">
-                            icon Training
+                            Freeform Training
                         </Dropdown.Item>
 						<Dropdown.Item href={level14} className="class2">
                             The Final Test
@@ -256,15 +256,19 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                                         Any%
                                     </a>{" "}
                                 </th>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={sam} className="class3">
+                                        SA Master
+                                    </a>{" "}
+                                </th>
+                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                    <a href={sasom} className="class3">
+                                        SASO Master
+                                    </a>{" "}
+                                </th>
                             </tr>
                         </table>
 						                    </center>
-                    <center></center>
-                    &nbsp &nbsp
-                                      </center>
-                    <center></center>
-                    &nbsp &nbsp
-                                        </center>
                     <center></center>
                     &nbsp &nbsp
                     <LeaderboardTable runs={runs} />
