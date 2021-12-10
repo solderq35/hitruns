@@ -268,15 +268,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                                 </th>
                             </tr>
                         </table>
-						<p className ="class1">
-						Click <a href={refreshlink} className="class9">
-                                        here
-                                    </a>{" "} if leaderboard is out of date relative to <a href="https://www.speedrun.com/hitman_3" className="class9">
-									speedrun.com
-							</a>
-							.							
-						</p>
-                    </center>
+						                    </center>
                     <center></center>
                     &nbsp &nbsp
                     <LeaderboardTable runs={runs} />

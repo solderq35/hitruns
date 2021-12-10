@@ -262,6 +262,12 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                     </center>
                     <center></center>
                     &nbsp &nbsp
+                                      </center>
+                    <center></center>
+                    &nbsp &nbsp
+                                        </center>
+                    <center></center>
+                    &nbsp &nbsp
                     <LeaderboardTable runs={runs} />
                 </Col>
                 //{" "}
