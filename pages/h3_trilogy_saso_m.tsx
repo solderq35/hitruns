@@ -32,6 +32,7 @@ const sasop = linkname + "_saso_p"
 const any = linkname + "_any_"
 const sam = linkname + "_sa_m"
 const sasom = linkname + "h3__saso_m"
+const refreshlink = linkname + "_" + ratingdropdown + "_" + diffdropdown
 
 const level1 = "h3_s1_" + ratingdropdown + "_" + diffdropdown
 const level2 = "h3_s2dlc_" + ratingdropdown + "_" + diffdropdown
