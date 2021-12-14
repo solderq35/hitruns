@@ -68,7 +68,7 @@ const IndexPage = (): JSX.Element => (
       <a href="https://i.ibb.co/TrJWrq5/splitsedit.png"  target="blank">https://i.ibb.co/TrJWrq5/splitsedit.png</a>
     </p>
     <p>Click "okay", then right click the main Livesplit application window and click on "save splits as" to save the splits for later use.</p>
-    <p>Right click on main Livesplit application window, and go to "Edit Layout". Click on the "+" symbol, then List -> Splits to make sure the splits created earlier show up on screen.</p>
+    <p>Right click on main Livesplit application window, and go to "Edit Layout". Click on the "+" symbol, then List -&gt; Splits to make sure the splits created earlier show up on screen.</p>
 	<p>Click on the "+" symbol again, then go to "Control", then "Manual Game Time".</p>
     <p>
       <a href="https://i.ibb.co/Mn4qC8w/editlayout.png"  target="blank">https://i.ibb.co/Mn4qC8w/editlayout.png</a>
