@@ -3,14 +3,15 @@ import Dropdown from "react-bootstrap/Dropdown"
 import Layout from "../components/Layout"
 
 const level1 = "guide_faq"
-const level2 = "guide_misc"
-const level3 = "guide_fast_anim"
+const level2 = "guide_breakable_boosting"
+const level3 = "guide_bullets"
 const level4 = "guide_electrocution"
 const level5 = "guide_explosions"
-const level6 = "guide_lures"
-const level7 = "guide_breakable_boosting"
-const level8 = "guide_livesplit"
-const level9 = "guide_bullets"
+const level6 = "guide_fast_anim"
+const level7 = "guide_livesplit_auto"
+const level8 = "guide_livesplit_manual"
+const level9 = "guide_lures"
+const level10 = "guide_misc"
 
 const IndexPage = (): JSX.Element => (
     <Layout title="Guides || HitRuns" headerText="HITMAN SPEEDRUNS">
@@ -24,11 +25,11 @@ const IndexPage = (): JSX.Element => (
                         <Dropdown.Item href={level1} className="class2">
                             Beginner FAQ
                         </Dropdown.Item>
-                        <Dropdown.Item href={level2} className="class2">
-                            Miscellaneous Tips/ Glossary
+						<Dropdown.Item href={level2} className="class2">
+                            Breakable Object Boosting
                         </Dropdown.Item>
 						<Dropdown.Item href={level3} className="class2">
-                            Fast Animations
+                            Bullets/ Gun Mechanics
                         </Dropdown.Item>
 						<Dropdown.Item href={level4} className="class2">
                             Electrocutions
@@ -37,16 +38,19 @@ const IndexPage = (): JSX.Element => (
                             Explosions/ Explosives
                         </Dropdown.Item>
 						<Dropdown.Item href={level6} className="class2">
-                            Lures
+                            Fast Animations
                         </Dropdown.Item>
 						<Dropdown.Item href={level7} className="class2">
-                            Breakable Object Boosting
+                            Livesplit Guide (Autosplitter)
                         </Dropdown.Item>
 						<Dropdown.Item href={level8} className="class2">
-                            Livesplit Guide
+                            Livesplit Guide (Manually Entered Times)
                         </Dropdown.Item>
 						<Dropdown.Item href={level9} className="class2">
-                            Bullets/ Gun Mechanics
+                            Lures
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level10} className="class2">
+                            Miscellaneous Tips/ Glossary
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					
