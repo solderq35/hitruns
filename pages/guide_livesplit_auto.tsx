@@ -61,7 +61,7 @@ const IndexPage = (): JSX.Element => (
 <p>
 
 <p>
-      <a href="https://youtu.be/81oA4RHAQug">Video Tutorial</a>- If you prefer video to text tutorial.</p>
+      <a href="https://youtu.be/81oA4RHAQug" target="_blank">Video Tutorial</a>- If you prefer video to text tutorial.</p>
     <h3 id="specifications">Specifications:</h3>
     <p>This autosplitter script will keep track of in game time. Just as the in game time normally works, this timer will be paused when in loading screens, inventory, planning screen in between levels, and during intro/ exit cutscenes. It does not split between levels automatically, although a running total of the in game time is maintained.</p>
     <p>
