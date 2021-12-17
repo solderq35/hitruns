@@ -60,12 +60,14 @@ const IndexPage = (): JSX.Element => (
 	<h2> In Game Time Autosplit Script Guide </h2>
 <p>
 
-<h3 id="specifications">Specifications:</h3>
+<p>
+      <a href="https://youtu.be/81oA4RHAQug">Video Tutorial</a>- If you prefer video to text tutorial.</p>
+    <h3 id="specifications">Specifications:</h3>
     <p>This autosplitter script will keep track of in game time. Just as the in game time normally works, this timer will be paused when in loading screens, inventory, planning screen in between levels, and during intro/ exit cutscenes. It does not split between levels automatically, although a running total of the in game time is maintained.</p>
-	 <p>
+    <p>
       <strong>Disclaimer: This autosplitter may not be 100% accurate, this tool is just to get a decent estimate of your final in game time. Runs will be retimed by moderators as necessary.</strong>
     </p>
-    <h3 id="instructions">Instructions</h3>
+    <h3 id="setup-instructions">Setup Instructions</h3>
     <p>Download Livesplit <a href="https://livesplit.org/downloads/">here</a></p>
     <p>Download the hitman3.asl code from here: <a href="https://github.com/sandro-h/hitman3_asl">https://github.com/sandro-h/hitman3_asl</a></p>
     <p>Unzip the folder of the Livesplit Download, and then click on the Livesplit Application to start. Unzip the hitman3.asl file from its folder as well.</p>
@@ -82,11 +84,12 @@ const IndexPage = (): JSX.Element => (
     <p>Click "okay", then right click the main Livesplit application window and click on "save layout as" to save the splits for later use.</p>
     <p>Right click on main Livesplit application window, and go to "Compare Against", then "Game Time".</p>
     <p>Right click on main Livesplit application window, and go to "Settings", and adjust hotkeys as needed. "Numpad 1" (have Num Lock on) is the default for starting and splitting.</p>
-    <p>If you followed the steps above correctly, pressing on Numpad 1 will move the timer to the next split (level).</p>
-    <p>
-      <strong>Note that this autosplit script will keep a running total of your in game time, but it does not split between levels automatically.</strong>
-    </p>
-    <p>If you mess up, you can reset the run (numpad 3 by default).</p>
+    <h3 id="usage-instructions">Usage Instructions</h3>
+    <p>Start game. Press Numpad 1 (default binding). The livesplit timer should turn green, but still be set as 0.</p>
+    <p>Start the first level; the timer should start after first level's initial cutscene is ended.</p>
+    <p>You can press numpad 1 again to move the split to the next level (Sapienza). (this is what is meant by, the script does not actually autosplit). If you don't press numpad 1 again, the in game time will be kept track of accurately as you move to the next level, but it will stay on Paris or whatever your first level is.</p>
+    <p>Press numpad 3 (default value) to reset timer. Remember to press numpad 1 again and wait for timer to turn green to start again if you want to go again.</p>
+    <p>Final disclaimer: Timer may not be 100% accurate, use rating screen + on screen in game timer to retime as necessary later</p>
 
 </p>
 	
