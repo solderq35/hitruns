@@ -154,7 +154,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             World of Tomorrow (Sapienza)
                         </Dropdown.Item>
                         <Dropdown.Item href={level17} className="class2">
-                            A Gilded Cage (Marrakesh
+                            A Gilded Cage (Marrakesh)
                         </Dropdown.Item>
 						<Dropdown.Item href={level18} className="class2">
                             Club 27 (Bangkok)
