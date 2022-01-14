@@ -325,12 +325,12 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
 						</p>
 						<p>
                         <a href={level40} className="class5">
-                            Holiday Hoarders [Peacock]
+                            Holiday Hoarders
                         </a>{" "}
 						</p>
 						<p>
                         <a href={level41} className="class5">
-                            Snow Festival [Peacock]
+                            Snow Festival
                         </a>{" "}
 						</p>
         </center>

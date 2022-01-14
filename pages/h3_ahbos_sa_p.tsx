@@ -46,7 +46,7 @@ const level9 = "h3_berlin_" + ratingdropdown + "_" + diffdropdown
 const level10 = "h3_chongqing_" + ratingdropdown + "_" + diffdropdown
 const level11 = "h3_mendoza_" + ratingdropdown + "_" + diffdropdown
 const level12 = "h3_romania_" + ratingdropdown + "_" + diffdropdown
-const level13 = "h3_icon_" + ratingdropdown + "_" + "p"
+const level13 = "h3_freeform_" + ratingdropdown + "_" + "p"
 const level14 = "h3_finaltest_" + ratingdropdown + "_" + "p"
 const level15 = "h3_paris_" + ratingdropdown + "_" + diffdropdown
 const level16 = "h3_sapienza_" + ratingdropdown + "_" + diffdropdown
@@ -142,7 +142,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             Untouchable (Romania)
                         </Dropdown.Item>
                         <Dropdown.Item href={level13} className="class2">
-                            icon Training
+                           Freeform Training
                         </Dropdown.Item>
 						<Dropdown.Item href={level14} className="class2">
                             The Final Test
@@ -223,10 +223,10 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             A Bitter Pill
                         </Dropdown.Item>
 						<Dropdown.Item href={level40} className="class2">
-                            Holiday Hoarders [Peacock]
+                            Holiday Hoarders
                         </Dropdown.Item>
 						<Dropdown.Item href={level41} className="class2">
-                            Snow Festival [Peacock]
+                            Snow Festival
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					

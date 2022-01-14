@@ -223,10 +223,10 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             A Bitter Pill
                         </Dropdown.Item>
 						<Dropdown.Item href={level40} className="class2">
-                            Holiday Hoarders [Peacock]
+                            Holiday Hoarders
                         </Dropdown.Item>
 						<Dropdown.Item href={level41} className="class2">
-                            Snow Festival [Peacock]
+                            Snow Festival
                         </Dropdown.Item>
                     </Dropdown.Menu>
 					
