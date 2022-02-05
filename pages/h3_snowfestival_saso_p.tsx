@@ -89,6 +89,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
             <Row>
 
                 <Dropdown>
+
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Hitman 3 Full Game Categories
                     </Dropdown.Toggle>
