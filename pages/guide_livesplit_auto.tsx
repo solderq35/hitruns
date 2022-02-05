@@ -28,7 +28,7 @@ const IndexPage = (): JSX.Element => (
                             Beginner FAQ
                         </Dropdown.Item>
 						<Dropdown.Item href={level2} className="class2">
-                            Breakable Object Boosting
+                            Boosting
                         </Dropdown.Item>
 						<Dropdown.Item href={level3} className="class2">
                             Bullets/ Gun Mechanics
