@@ -15,7 +15,7 @@ const IndexPage = (): JSX.Element => (
 	</li>
 	
 	<li>
-	<a href="/guide_breakable_boosting" className = "class7">Breakable Object Boosting</a>
+	<a href="/guide_breakable_boosting" className = "class7">Boosting</a>
 	</li>
 	
 	<li>
