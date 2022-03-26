@@ -100,10 +100,10 @@ const IndexPage = (): JSX.Element => (
             >
                 HitRuns GitHub
             </a>
-            . I'm pretty amateur at coding and the original Hobbit Speedruns
-            site wasn't designed to host leaderboards from a ton of categories,
-            so excuse the poorly optimized code.
+            .
         </p>
+		&nbsp
+
 	<h2> Hitman 3 Leaderboards </h2>
         <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
@@ -249,7 +249,21 @@ const IndexPage = (): JSX.Element => (
                     </Dropdown.Menu>
 					
                 </Dropdown>
-
+				&nbsp
+		<h2> Other HITMAN Coding Projects </h2>
+		<p>
+		I'm Solderq35. You can follow my other coding projects (so far HITMAN related) here: {" "}
+            <a
+                href="https://solderq35.github.io/"
+                className="class4"
+                target="_blank"
+                rel="noreferrer"
+            >
+                https://solderq35.github.io/
+            </a>
+			
+			</p>
+			&nbsp
     </Layout>
 )
 
