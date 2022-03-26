@@ -2,7 +2,7 @@
 import { GetStaticProps } from "next"
 import { ParsedRun } from "../interfaces/leaderboard"
 import Layout from "../components/Layout"
-import LeaderboardTable from "../components/LeaderboardTableILTies"
+import LeaderboardTable from "../components/LeaderboardTableIL"
 import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
 import { requestRuns } from "../lib/h3_hokkaido_saso_m_run"
