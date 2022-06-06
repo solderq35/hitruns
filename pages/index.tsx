@@ -64,9 +64,7 @@ const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
 
 const IndexPage = (): JSX.Element => (
     <Layout title="Home | HitRuns" headerText="HITMAN SPEEDRUNS">
-
         <h2>Welcome to HitRuns</h2>
-
         <p>
             This is a mirror for the{" "}
             <a
@@ -77,8 +75,10 @@ const IndexPage = (): JSX.Element => (
             >
                 Hitman 3 speedrun.com leaderboard
             </a>
-            , and potentially other Hitman series leaderboards in the future. It is intended as a backup and/or supplement to the speedrun.com
-            leaderboards, not as a replacement. Please go to speedrun.com to submit new runs to the leaderboards.
+            , and potentially other Hitman series leaderboards in the future. It
+            is intended as a backup and/or supplement to the speedrun.com
+            leaderboards, not as a replacement. Please go to speedrun.com to
+            submit new runs to the leaderboards.
         </p>
         <p>
             I mostly based the structure of this site from{" "}
@@ -102,157 +102,152 @@ const IndexPage = (): JSX.Element => (
             </a>
             .
         </p>
-		&nbsp
-
-	<h2> Hitman 3 Leaderboards </h2>
+        &nbsp
+        <h2> Hitman 3 Leaderboards </h2>
         <Dropdown>
-                    <Dropdown.Toggle variant="warning" id="dropdown-basic">
-					
-                        Hitman 3 Full Game Categories
-                    </Dropdown.Toggle>
+            <Dropdown.Toggle variant="warning" id="dropdown-basic">
+                Hitman 3 Full Game Categories
+            </Dropdown.Toggle>
 
-                    <Dropdown.Menu variant="dark">
-                        <Dropdown.Item href={level3} className="class2">
-                            Season 3
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level2} className="class2">
-                            Season 2 w/ DLC
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level1} className="class2">
-                            Season 1
-                        </Dropdown.Item>
-						<Dropdown.Item href={level4} className="class2">
-                            Trilogy Campaign
-                        </Dropdown.Item>
-						<Dropdown.Item href={level5} className="class2">
-                            Patient Zero
-                        </Dropdown.Item>
-						<Dropdown.Item href={level6} className="class2">
-                            Season 2 (no DLC)
-                        </Dropdown.Item>
-                    </Dropdown.Menu>
-					
-                </Dropdown>
+            <Dropdown.Menu variant="dark">
+                <Dropdown.Item href={level3} className="class2">
+                    Season 3
+                </Dropdown.Item>
+                <Dropdown.Item href={level2} className="class2">
+                    Season 2 w/ DLC
+                </Dropdown.Item>
+                <Dropdown.Item href={level1} className="class2">
+                    Season 1
+                </Dropdown.Item>
+                <Dropdown.Item href={level4} className="class2">
+                    Trilogy Campaign
+                </Dropdown.Item>
+                <Dropdown.Item href={level5} className="class2">
+                    Patient Zero
+                </Dropdown.Item>
+                <Dropdown.Item href={level6} className="class2">
+                    Season 2 (no DLC)
+                </Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+        <Dropdown className="justify-content-end" style={{ width: "100%" }}>
+            <Dropdown.Toggle variant="warning" id="dropdown-basic">
+                Hitman 3 Individual Level Categories
+            </Dropdown.Toggle>
 
-				<Dropdown className="justify-content-end" style={{ width: "100%" }}>
-                    <Dropdown.Toggle variant="warning" id="dropdown-basic">
-                        Hitman 3 Individual Level Categories
-                    </Dropdown.Toggle>
-
-
-                    <Dropdown.Menu variant="dark">
-                        <Dropdown.Item href={level7} className="class2">
-                            On Top of the World (Dubai)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level8} className="class2">
-                            Death in the Family (Dartmoor)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level9} className="class2">
-                            Apex Predator (Berlin)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level10} className="class2">
-                            End of an Era (Chongqing)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level11} className="class2">
-                            The Farewell (Mendoza)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level12} className="class2">
-                            Untouchable (Romania)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level13} className="class2">
-                            Freeform Training
-                        </Dropdown.Item>
-						<Dropdown.Item href={level14} className="class2">
-                            The Final Test
-                        </Dropdown.Item>
-						<Dropdown.Item href={level15} className="class2">
-                            The Showstopper (Paris)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level16} className="class2">
-                            World of Tomorrow (Sapienza)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level17} className="class2">
-                            A Gilded Cage (Marrakesh)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level18} className="class2">
-                            Club 27 (Bangkok)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level19} className="class2">
-                            Freedom Fighters (Colorado)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level20} className="class2">
-                            Situs Inversus (Hokkaido)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level21} className="class2">
-                            Nightcall (Hawke's Bay)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level22} className="class2">
-                            The Finish Line (Miami)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level23} className="class2">
-                            Three Headed Serpent (Santa Fortuna)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level24} className="class2">
-                            Chasing a Ghost (Mumbai)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level25} className="class2">
-                            Another Life (Whitteton Creek)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level26} className="class2">
-                            The Ark Society (Sgail)
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level27} className="class2">
-                            The Golden Handshake (New York)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level28} className="class2">
-                            The Last Resort (Haven)
-                        </Dropdown.Item>
-						<Dropdown.Item href={level29} className="class2">
-                            Landslide
-                        </Dropdown.Item>
-						<Dropdown.Item href={level30} className="class2">
-                            The Icon
-                        </Dropdown.Item>
-						<Dropdown.Item href={level31} className="class2">
-                            A House Built on Sand
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level32} className="class2">
-                            The Source
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level33} className="class2">
-                            The Author
-                        </Dropdown.Item>
-						<Dropdown.Item href={level34} className="class2">
-                            The Vector
-                        </Dropdown.Item>
-						<Dropdown.Item href={level35} className="class2">
-                            Patient Zero Hokkaido
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level36} className="class2">
-                            Embrace of the Serpent
-                        </Dropdown.Item>
-                        <Dropdown.Item href={level37} className="class2">
-                            Illusions of Grandeur
-                        </Dropdown.Item>
-						<Dropdown.Item href={level38} className="class2">
-                            A Silver Tongue
-                        </Dropdown.Item>
-						<Dropdown.Item href={level39} className="class2">
-                            A Bitter Pill
-                        </Dropdown.Item>
-						<Dropdown.Item href={level40} className="class2">
-                            Holiday Hoarders [Peacock]
-                        </Dropdown.Item>
-						<Dropdown.Item href={level41} className="class2">
-                            Snow Festival [Peacock]
-                        </Dropdown.Item>
-                    </Dropdown.Menu>
-					
-                </Dropdown>
-				&nbsp
-		<h2> Other HITMAN Coding Projects </h2>
-		<p>
-		I'm Solderq35. You can follow my other coding projects (so far HITMAN related) here: {" "}
+            <Dropdown.Menu variant="dark">
+                <Dropdown.Item href={level7} className="class2">
+                    On Top of the World (Dubai)
+                </Dropdown.Item>
+                <Dropdown.Item href={level8} className="class2">
+                    Death in the Family (Dartmoor)
+                </Dropdown.Item>
+                <Dropdown.Item href={level9} className="class2">
+                    Apex Predator (Berlin)
+                </Dropdown.Item>
+                <Dropdown.Item href={level10} className="class2">
+                    End of an Era (Chongqing)
+                </Dropdown.Item>
+                <Dropdown.Item href={level11} className="class2">
+                    The Farewell (Mendoza)
+                </Dropdown.Item>
+                <Dropdown.Item href={level12} className="class2">
+                    Untouchable (Romania)
+                </Dropdown.Item>
+                <Dropdown.Item href={level13} className="class2">
+                    Freeform Training
+                </Dropdown.Item>
+                <Dropdown.Item href={level14} className="class2">
+                    The Final Test
+                </Dropdown.Item>
+                <Dropdown.Item href={level15} className="class2">
+                    The Showstopper (Paris)
+                </Dropdown.Item>
+                <Dropdown.Item href={level16} className="class2">
+                    World of Tomorrow (Sapienza)
+                </Dropdown.Item>
+                <Dropdown.Item href={level17} className="class2">
+                    A Gilded Cage (Marrakesh)
+                </Dropdown.Item>
+                <Dropdown.Item href={level18} className="class2">
+                    Club 27 (Bangkok)
+                </Dropdown.Item>
+                <Dropdown.Item href={level19} className="class2">
+                    Freedom Fighters (Colorado)
+                </Dropdown.Item>
+                <Dropdown.Item href={level20} className="class2">
+                    Situs Inversus (Hokkaido)
+                </Dropdown.Item>
+                <Dropdown.Item href={level21} className="class2">
+                    Nightcall (Hawke's Bay)
+                </Dropdown.Item>
+                <Dropdown.Item href={level22} className="class2">
+                    The Finish Line (Miami)
+                </Dropdown.Item>
+                <Dropdown.Item href={level23} className="class2">
+                    Three Headed Serpent (Santa Fortuna)
+                </Dropdown.Item>
+                <Dropdown.Item href={level24} className="class2">
+                    Chasing a Ghost (Mumbai)
+                </Dropdown.Item>
+                <Dropdown.Item href={level25} className="class2">
+                    Another Life (Whitteton Creek)
+                </Dropdown.Item>
+                <Dropdown.Item href={level26} className="class2">
+                    The Ark Society (Sgail)
+                </Dropdown.Item>
+                <Dropdown.Item href={level27} className="class2">
+                    The Golden Handshake (New York)
+                </Dropdown.Item>
+                <Dropdown.Item href={level28} className="class2">
+                    The Last Resort (Haven)
+                </Dropdown.Item>
+                <Dropdown.Item href={level29} className="class2">
+                    Landslide
+                </Dropdown.Item>
+                <Dropdown.Item href={level30} className="class2">
+                    The Icon
+                </Dropdown.Item>
+                <Dropdown.Item href={level31} className="class2">
+                    A House Built on Sand
+                </Dropdown.Item>
+                <Dropdown.Item href={level32} className="class2">
+                    The Source
+                </Dropdown.Item>
+                <Dropdown.Item href={level33} className="class2">
+                    The Author
+                </Dropdown.Item>
+                <Dropdown.Item href={level34} className="class2">
+                    The Vector
+                </Dropdown.Item>
+                <Dropdown.Item href={level35} className="class2">
+                    Patient Zero Hokkaido
+                </Dropdown.Item>
+                <Dropdown.Item href={level36} className="class2">
+                    Embrace of the Serpent
+                </Dropdown.Item>
+                <Dropdown.Item href={level37} className="class2">
+                    Illusions of Grandeur
+                </Dropdown.Item>
+                <Dropdown.Item href={level38} className="class2">
+                    A Silver Tongue
+                </Dropdown.Item>
+                <Dropdown.Item href={level39} className="class2">
+                    A Bitter Pill
+                </Dropdown.Item>
+                <Dropdown.Item href={level40} className="class2">
+                    Holiday Hoarders [Peacock]
+                </Dropdown.Item>
+                <Dropdown.Item href={level41} className="class2">
+                    Snow Festival [Peacock]
+                </Dropdown.Item>
+            </Dropdown.Menu>
+        </Dropdown>
+        &nbsp
+        <h2> Other HITMAN Coding Projects </h2>
+        <p>
+            I'm Solderq35. You can follow my other coding projects (so far
+            HITMAN related) here:{" "}
             <a
                 href="https://solderq35.github.io/"
                 className="class4"
@@ -261,9 +256,8 @@ const IndexPage = (): JSX.Element => (
             >
                 https://solderq35.github.io/
             </a>
-			
-			</p>
-			&nbsp
+        </p>
+        &nbsp
     </Layout>
 )
 

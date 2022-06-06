@@ -33,10 +33,10 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <table width="100%" className={`${styles["leaderboard-table"]}`}>
         <thead>
             <tr className={`${styles.default}`}>
-				<th></th>
+                <th></th>
                 <th>Player</th>
                 <th className="text-right">In Game Time</th>
- 
+
                 {!compact && <th className="text-right">Date</th>}
             </tr>
         </thead>
@@ -103,7 +103,6 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                                 </a>
                             </td>
                         )}
-						
                     </tr>
                 )
             })}

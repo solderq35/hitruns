@@ -25,23 +25,25 @@ const formatTime = (inputSeconds: number): string => {
         2,
         "0"
     )
-	const milliseconds: string = padStart(
-        ((inputSeconds % 1)*1000).toFixed(0),
+    const milliseconds: string = padStart(
+        ((inputSeconds % 1) * 1000).toFixed(0),
         3,
         "0"
     )
 
-    return `${hours !== "0" ? `${hours}h` : ""} ${minutes}m ${seconds}s ${milliseconds}ms`
+    return `${
+        hours !== "0" ? `${hours}h` : ""
+    } ${minutes}m ${seconds}s ${milliseconds}ms`
 }
 
 const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <table width="100%" className={`${styles["leaderboard-table"]}`}>
         <thead>
             <tr className={`${styles.default}`}>
-				<th></th>
+                <th></th>
                 <th>Player</th>
                 <th className="text-right">In Game Time</th>
- 
+
                 {!compact && <th className="text-right">Date</th>}
             </tr>
         </thead>
@@ -108,7 +110,6 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                                 </a>
                             </td>
                         )}
-						
                     </tr>
                 )
             })}

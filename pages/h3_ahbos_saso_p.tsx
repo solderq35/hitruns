@@ -87,7 +87,6 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
             headerText="H3 LEVEL LEADERBOARD"
         >
             <Row>
-
                 <Dropdown>
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Hitman 3 Full Game Categories
@@ -103,24 +102,24 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level1} className="class2">
                             Season 1
                         </Dropdown.Item>
-						<Dropdown.Item href={level4} className="class2">
+                        <Dropdown.Item href={level4} className="class2">
                             Trilogy Campaign
                         </Dropdown.Item>
-						<Dropdown.Item href={level5} className="class2">
+                        <Dropdown.Item href={level5} className="class2">
                             Patient Zero
                         </Dropdown.Item>
-						<Dropdown.Item href={level6} className="class2">
+                        <Dropdown.Item href={level6} className="class2">
                             Season 2 (no DLC)
                         </Dropdown.Item>
                     </Dropdown.Menu>
-					
                 </Dropdown>
-
-				<Dropdown className="justify-content-end" style={{ width: "100%" }}>
+                <Dropdown
+                    className="justify-content-end"
+                    style={{ width: "100%" }}
+                >
                     <Dropdown.Toggle variant="warning" id="dropdown-basic">
                         Hitman 3 Individual Level Categories
                     </Dropdown.Toggle>
-
 
                     <Dropdown.Menu variant="dark">
                         <Dropdown.Item href={level7} className="class2">
@@ -132,22 +131,22 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level9} className="class2">
                             Apex Predator (Berlin)
                         </Dropdown.Item>
-						<Dropdown.Item href={level10} className="class2">
+                        <Dropdown.Item href={level10} className="class2">
                             End of an Era (Chongqing)
                         </Dropdown.Item>
-						<Dropdown.Item href={level11} className="class2">
+                        <Dropdown.Item href={level11} className="class2">
                             The Farewell (Mendoza)
                         </Dropdown.Item>
                         <Dropdown.Item href={level12} className="class2">
                             Untouchable (Romania)
                         </Dropdown.Item>
                         <Dropdown.Item href={level13} className="class2">
-                           Freeform Training
+                            Freeform Training
                         </Dropdown.Item>
-						<Dropdown.Item href={level14} className="class2">
+                        <Dropdown.Item href={level14} className="class2">
                             The Final Test
                         </Dropdown.Item>
-						<Dropdown.Item href={level15} className="class2">
+                        <Dropdown.Item href={level15} className="class2">
                             The Showstopper (Paris)
                         </Dropdown.Item>
                         <Dropdown.Item href={level16} className="class2">
@@ -156,16 +155,16 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level17} className="class2">
                             A Gilded Cage (Marrakesh)
                         </Dropdown.Item>
-						<Dropdown.Item href={level18} className="class2">
+                        <Dropdown.Item href={level18} className="class2">
                             Club 27 (Bangkok)
                         </Dropdown.Item>
-						<Dropdown.Item href={level19} className="class2">
+                        <Dropdown.Item href={level19} className="class2">
                             Freedom Fighters (Colorado)
                         </Dropdown.Item>
-						<Dropdown.Item href={level20} className="class2">
+                        <Dropdown.Item href={level20} className="class2">
                             Situs Inversus (Hokkaido)
                         </Dropdown.Item>
-						<Dropdown.Item href={level21} className="class2">
+                        <Dropdown.Item href={level21} className="class2">
                             Nightcall (Hawke's Bay)
                         </Dropdown.Item>
                         <Dropdown.Item href={level22} className="class2">
@@ -174,10 +173,10 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level23} className="class2">
                             Three Headed Serpent (Santa Fortuna)
                         </Dropdown.Item>
-						<Dropdown.Item href={level24} className="class2">
+                        <Dropdown.Item href={level24} className="class2">
                             Chasing a Ghost (Mumbai)
                         </Dropdown.Item>
-						<Dropdown.Item href={level25} className="class2">
+                        <Dropdown.Item href={level25} className="class2">
                             Another Life (Whitteton Creek)
                         </Dropdown.Item>
                         <Dropdown.Item href={level26} className="class2">
@@ -186,16 +185,16 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level27} className="class2">
                             The Golden Handshake (New York)
                         </Dropdown.Item>
-						<Dropdown.Item href={level28} className="class2">
+                        <Dropdown.Item href={level28} className="class2">
                             The Last Resort (Haven)
                         </Dropdown.Item>
-						<Dropdown.Item href={level29} className="class2">
+                        <Dropdown.Item href={level29} className="class2">
                             Landslide
                         </Dropdown.Item>
-						<Dropdown.Item href={level30} className="class2">
+                        <Dropdown.Item href={level30} className="class2">
                             The Icon
                         </Dropdown.Item>
-						<Dropdown.Item href={level31} className="class2">
+                        <Dropdown.Item href={level31} className="class2">
                             A House Built on Sand
                         </Dropdown.Item>
                         <Dropdown.Item href={level32} className="class2">
@@ -204,10 +203,10 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level33} className="class2">
                             The Author
                         </Dropdown.Item>
-						<Dropdown.Item href={level34} className="class2">
+                        <Dropdown.Item href={level34} className="class2">
                             The Vector
                         </Dropdown.Item>
-						<Dropdown.Item href={level35} className="class2">
+                        <Dropdown.Item href={level35} className="class2">
                             Patient Zero Hokkaido
                         </Dropdown.Item>
                         <Dropdown.Item href={level36} className="class2">
@@ -216,22 +215,20 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <Dropdown.Item href={level37} className="class2">
                             Illusions of Grandeur
                         </Dropdown.Item>
-						<Dropdown.Item href={level38} className="class2">
+                        <Dropdown.Item href={level38} className="class2">
                             A Silver Tongue
                         </Dropdown.Item>
-						<Dropdown.Item href={level39} className="class2">
+                        <Dropdown.Item href={level39} className="class2">
                             A Bitter Pill
                         </Dropdown.Item>
-						<Dropdown.Item href={level40} className="class2">
+                        <Dropdown.Item href={level40} className="class2">
                             Holiday Hoarders
                         </Dropdown.Item>
-						<Dropdown.Item href={level41} className="class2">
+                        <Dropdown.Item href={level41} className="class2">
                             Snow Festival
                         </Dropdown.Item>
                     </Dropdown.Menu>
-					
                 </Dropdown>
-
                 <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
                     <center>
                         <h4 className="text-center">
@@ -258,7 +255,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                                 </th>
                             </tr>
                         </table>
-						                    </center>
+                    </center>
                     <center></center>
                     &nbsp &nbsp
                     <LeaderboardTable runs={runs} />

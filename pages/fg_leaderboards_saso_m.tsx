@@ -77,46 +77,46 @@ const level39 = "bitterpill_" + ratingdropdown + "_" + diffdropdown
 const level40 = "holidayhoarders_" + ratingdropdown + "_" + "p"
 const level41 = "snowfestival_" + ratingdropdown + "_" + "p"
 
-
 type Props = {
     pcRuns: ParsedRun[]
 }
 
 const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <Layout title="Home | HobbitSpeedruns" headerText="HITMAN 3 SPEEDRUNS">
-			<center>
-		<h4 className="text-center">
-			{category} ({rating}{diff})
-        </h4>
-			<table className="center" width="100%" id="subcat">
-                            <tr>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
-                                    <a href={sap} className="class3">
-                                        SA Pro
-                                    </a>{" "}
-                                </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
-                                    <a href={sasop} className="class3">
-                                        SASO Pro
-                                    </a>{" "}
-                                </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
-                                    <a href={any} className="class3">
-                                        Any%
-                                    </a>{" "}
-                                </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
-                                    <a href={sam} className="class3">
-                                        SA Master
-                                    </a>{" "}
-                                </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
-                                    <a href={sasom} className="class3">
-                                        SASO Master
-                                    </a>{" "}
-                                </th>
-                            </tr>
-                        </table>
+        <center>
+            <h4 className="text-center">
+                {category} ({rating}
+                {diff})
+            </h4>
+            <table className="center" width="100%" id="subcat">
+                <tr>
+                    <th mt-2 mb-0 color-yellow d-none d-md-block>
+                        <a href={sap} className="class3">
+                            SA Pro
+                        </a>{" "}
+                    </th>
+                    <th mt-2 mb-0 color-yellow d-none d-md-block>
+                        <a href={sasop} className="class3">
+                            SASO Pro
+                        </a>{" "}
+                    </th>
+                    <th mt-2 mb-0 color-yellow d-none d-md-block>
+                        <a href={any} className="class3">
+                            Any%
+                        </a>{" "}
+                    </th>
+                    <th mt-2 mb-0 color-yellow d-none d-md-block>
+                        <a href={sam} className="class3">
+                            SA Master
+                        </a>{" "}
+                    </th>
+                    <th mt-2 mb-0 color-yellow d-none d-md-block>
+                        <a href={sasom} className="class3">
+                            SASO Master
+                        </a>{" "}
+                    </th>
+                </tr>
+            </table>
             <table className="center" width="100%" id="subcat">
                 <tr>
                     <th className="mt-2 mb-0 color-yellow d-none d-md-block">
@@ -125,28 +125,28 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                         </a>{" "}
                     </th>
                 </tr>
-				<tr>
+                <tr>
                     <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                         <a href={level2} className="class5">
                             Season 2 w/DLC
                         </a>{" "}
                     </th>
                 </tr>
-				<tr>
+                <tr>
                     <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                         <a href={level1} className="class5">
                             Season 1
                         </a>{" "}
                     </th>
                 </tr>
-				<tr>
+                <tr>
                     <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                         <a href={level4} className="class5">
                             Trilogy Campaign
                         </a>{" "}
                     </th>
                 </tr>
-				<tr>
+                <tr>
                     <th className="mt-2 mb-0 color-yellow d-none d-md-block">
                         <a href={level6} className="class5">
                             Season 2 (no DLC)

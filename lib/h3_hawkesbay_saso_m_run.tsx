@@ -3,9 +3,9 @@ import { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
 export const requestRuns: any = async () => {
-	const mapcategory = "n93l11n9"
-	const rating = "jdronyld"
-	const difficultyvarname = "r8r1dv7n"
+    const mapcategory = "n93l11n9"
+    const rating = "jdronyld"
+    const difficultyvarname = "r8r1dv7n"
     const difficulty = "5q86pwy1"
 
     const response = await axios.get(
@@ -14,8 +14,8 @@ export const requestRuns: any = async () => {
             "/" +
             rating +
             "?var-" +
-			difficultyvarname +
-			"=" +
+            difficultyvarname +
+            "=" +
             difficulty +
             "&var-ylpe1pv8=klrpdvwq&embed=platforms%2Cplayers&timing=realtime_noloads"
     )

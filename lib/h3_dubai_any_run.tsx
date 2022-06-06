@@ -3,10 +3,10 @@ import { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
 export const requestRuns: any = async () => {
-    const mapcategory = "owo5jvkd"   
+    const mapcategory = "owo5jvkd"
     const rating = "jdz6nx62"
-	const difficultyvarname = "p854xo3l"
-	const difficulty = "gq7jpmpq"
+    const difficultyvarname = "p854xo3l"
+    const difficulty = "gq7jpmpq"
 
     const response = await axios.get(
         "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/level/" +
@@ -14,8 +14,8 @@ export const requestRuns: any = async () => {
             "/" +
             rating +
             "?var-" +
-			difficultyvarname +
-			"=" +
+            difficultyvarname +
+            "=" +
             difficulty +
             "&var-ylpe1pv8=klrpdvwq&embed=platforms%2Cplayers&timing=realtime_noloads"
     )

@@ -26,17 +26,19 @@ const Navigation = ({ className }: Props): JSX.Element => (
                 <Link href="/h3_leaderboards_sa_p" passHref>
                     <Nav.Link className="py-2 px-3">H3 Leaderboards</Nav.Link>
                 </Link>
-				
-				<Link href="/guides" passHref>
+
+                <Link href="/guides" passHref>
                     <Nav.Link className="py-2 px-3">Guides</Nav.Link>
                 </Link>
-				
-				<Link href="/resources" passHref>
+
+                <Link href="/resources" passHref>
                     <Nav.Link className="py-2 px-3">Resources</Nav.Link>
                 </Link>
-				
-				<Link href="/rules" passHref>
-                    <Nav.Link className="py-2 px-3">Run Submission Rules</Nav.Link>
+
+                <Link href="/rules" passHref>
+                    <Nav.Link className="py-2 px-3">
+                        Run Submission Rules
+                    </Nav.Link>
                 </Link>
 
                 <a
@@ -55,8 +57,8 @@ const Navigation = ({ className }: Props): JSX.Element => (
                 >
                     Github
                 </a>
-				
-				<a
+
+                <a
                     href="https://discord.com/invite/kVMBEZA"
                     className="py-2 px-3"
                     target="_blank"
