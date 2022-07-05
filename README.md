@@ -1,12 +1,28 @@
-<h2 align="center">HitRuns</h2>
+# HitRuns
 
-### About
+## Site URL (Try it Yourself!)
+
+**https://hitruns.vercel.app/**
+
+## About
 
 This is a mirror for the [Hitman 3 speedrun.com leaderboard](https://www.speedrun.com/hitman_3). It is intended as a backup and/or supplement to the speedrun.com leaderboards, not as a replacement. Backups of important Hitman 3 leaderboards will be hosted here, as will guides.
 
-I mostly based the structure of this site from [milankarman's Hobbit Speedruns site](https://github.com/milankarman/HobbitSpeedruns). You can follow the site in progress at [the HitRuns website](https://hitruns.vercel.app/), as well as in this Github respository. I'm pretty amateur at coding and the original Hobbit Speedruns site wasn't designed to host leaderboards from a ton of categories, so excuse the poorly optimized code.
+The site automatically updates itself periodically to match the current Hitman 3 leaderboard, which is possible through use of speedrun.com's API (more info below).
 
-### Setup and Startup
+Hitruns also tends to load faster and is more mobile-friendly than the original Hitman 3 leaderboard on speedrun.com (due to cutting out a lot of unnecessary features) which is a further bonus.
+
+### Technologies Used:
+
+-   NodeJS and Typescript for backend. Typescript
+-   Next.JS and React Bootstrap Frameworks used for front-end design (particularly for design of navbar, dropdown menus).
+-   Pulled data from speedrun.com's RESTFUL api (https://github.com/speedruncomorg/api/tree/master/version1)
+
+### Screenshot of Leaderboard page:
+
+![Screenshot of Leaderboard](https://media.discordapp.net/attachments/833505136290299935/993949617760772206/unknown.png?width=1154&height=670)
+
+## Usage Setup
 
 Clone the project using `git clone` command like so:
 
