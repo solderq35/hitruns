@@ -78,6 +78,7 @@ const level38 = "h3_silvertongue_" + ratingdropdown + "_" + diffdropdown
 const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
 const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + diffdropdown
 const level41 = "h3_snowfestival_" + ratingdropdown + "_" + diffdropdown
+const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
     pcRuns: ParsedRun[]
@@ -331,6 +332,11 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
             <p>
                 <a href={level41} className="class5">
                     Snow Festival
+                </a>{" "}
+            </p>
+            <p>
+                <a href={level42} className="class5">
+                    Shadows in the Water (Ambrose Island)
                 </a>{" "}
             </p>
         </center>

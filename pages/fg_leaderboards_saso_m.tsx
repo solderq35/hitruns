@@ -75,7 +75,8 @@ const level37 = "illusions_" + ratingdropdown + "_" + diffdropdown
 const level38 = "silvertongue_" + ratingdropdown + "_" + diffdropdown
 const level39 = "bitterpill_" + ratingdropdown + "_" + diffdropdown
 const level40 = "holidayhoarders_" + ratingdropdown + "_" + "p"
-const level41 = "snowfestival_" + ratingdropdown + "_" + "p"
+const level41 = "h3_snowfestival_" + ratingdropdown + "_" + diffdropdown
+const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
     pcRuns: ParsedRun[]

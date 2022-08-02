@@ -74,7 +74,8 @@ const level37 = "h3_illusions_" + ratingdropdown + "_" + diffdropdown
 const level38 = "h3_silvertongue_" + ratingdropdown + "_" + diffdropdown
 const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
 const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
-const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
+const level41 = "h3_snowfestival_" + ratingdropdown + "_" + diffdropdown
+const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
     runs: ParsedRun[]
@@ -226,6 +227,9 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         </Dropdown.Item>
                         <Dropdown.Item href={level41} className="class2">
                             Snow Festival
+                        </Dropdown.Item>
+                        <Dropdown.Item href={level42} className="class2">
+                            Shadows in the Water (Ambrose Island)
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>

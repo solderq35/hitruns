@@ -27,13 +27,23 @@ const Navigation = ({ className }: Props): JSX.Element => (
                     <Nav.Link className="py-2 px-3">H3 Leaderboards</Nav.Link>
                 </Link>
 
-                <Link href="/guides" passHref>
-                    <Nav.Link className="py-2 px-3">Guides</Nav.Link>
-                </Link>
+                <a
+                    href="https://hitruns-wiki.vercel.app/docs/index"
+                    className="py-2 px-3"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Guides
+                </a>
 
-                <Link href="/resources" passHref>
-                    <Nav.Link className="py-2 px-3">Resources</Nav.Link>
-                </Link>
+                <a
+                    href="https://hitruns-wiki.vercel.app/docs/resources"
+                    className="py-2 px-3"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Resources
+                </a>
 
                 <Link href="/rules" passHref>
                     <Nav.Link className="py-2 px-3">
