@@ -69,7 +69,7 @@ const Navigation = ({ className }: Props): JSX.Element => (
                 </a>
 
                 <a
-                    href="https://discord.com/invite/kVMBEZA"
+                    href="https://hitruns-wiki.vercel.app/docs/discord"
                     className="py-2 px-3"
                     target="_blank"
                     rel="noreferrer"
