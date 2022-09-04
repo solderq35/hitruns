@@ -238,6 +238,9 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         <h4 className="text-center">
                             {category} {rating} {diff}
                         </h4>
+						<p className = "class3">
+						Refresh Page if Out of Date
+						</p>
                         <center></center>
 
                         <table className="center" width="100%" id="subcat">
