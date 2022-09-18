@@ -31,11 +31,18 @@ p {
     font-size: 1.3rem;
 }
 
-p.class1 {
-    font-size: 2.5vh;
-    padding-top: 2vh;
-    margin: 0;
+p.class2 {
+    color: white !important;
+    font-family: "Open Sans", "Calibri", sans-serif;
+    font-size: 1.5rem;
 }
+
+p.class3 {
+    color: white !important;
+    font-family: "Open Sans", "Calibri", sans-serif;
+    font-size: 1.5rem;
+}
+
 p.class9 {
     font-size: 1.3rem;
 }
@@ -59,11 +66,11 @@ a.class2 {
 
 a.class3 {
     color: rgb(255, 203, 61) !important;
-    font-size: 3vh;
+    font-size: 1.3rem;
 }
 a.class4 {
     color: rgb(255, 203, 61) !important;
-    font-size: 1.15rem;
+    font-size: 1.3rem;
 }
 a.class5 {
     color: rgb(119, 244, 252) !important;
