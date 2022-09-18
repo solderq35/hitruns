@@ -84,7 +84,7 @@ type Props = {
 const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
-            title="Hitman 3 Full Game Leaderboard | HitRuns"
+            title = {category + " - " + rating + " " + diff + " | HitRuns"}
             headerText="H3 FULL GAME LEADERBOARD"
         >
             <Row>

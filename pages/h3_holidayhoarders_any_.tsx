@@ -46,7 +46,7 @@ const level9 = "h3_berlin_" + ratingdropdown + "_" + diffdropdown
 const level10 = "h3_chongqing_" + ratingdropdown + "_" + diffdropdown
 const level11 = "h3_mendoza_" + ratingdropdown + "_" + diffdropdown
 const level12 = "h3_romania_" + ratingdropdown + "_" + diffdropdown
-const level13 = "h3_freeform_" + ratingdropdown + "_" + "p"
+const level13 = "h3_freeform_" + ratingdropdown + "_" + diffdropdown
 const level14 = "h3_finaltest_" + ratingdropdown + "_" + diffdropdown
 const level15 = "h3_paris_" + ratingdropdown + "_" + diffdropdown
 const level16 = "h3_sapienza_" + ratingdropdown + "_" + diffdropdown
@@ -84,7 +84,7 @@ type Props = {
 const Leaderboard = ({ runs }: Props): JSX.Element => {
     return (
         <Layout
-            title="Hitman 3 Level Leaderboard | HitRuns"
+            title = {category + " - " + rating + " " + diff + " | HitRuns"}
             headerText="H3 LEVEL LEADERBOARD"
         >
             <Row>
@@ -236,7 +236,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                 <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
                     <center>
                         <h4 className="text-center">
-                            {category} {rating} {diff}
+                            {category} {"- "+ rating} {diff}
                         </h4>
                         <p className="class3">Refresh Page if Out of Date</p>
                         <center></center>

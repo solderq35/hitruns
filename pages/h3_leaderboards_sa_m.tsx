@@ -12,6 +12,7 @@ import LeaderboardTable from "../components/LeaderboardTable"
 const linkname = "h3_leaderboards"
 const category = "H3 Individual Level Leaderboards"
 const category2 = "H3 Full Game Leaderboards"
+const category3 = "H3 Leaderboards"
 const rating = "SA"
 const diff = " Master"
 
@@ -86,7 +87,7 @@ type Props = {
 
 const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <Layout
-        title="Hitman 3 Leaderboards | HitRuns"
+        title = {category3 + " - " + rating + " " + diff + " | HitRuns"}
         headerText="HITMAN 3 SPEEDRUNS"
     >
         <center>
