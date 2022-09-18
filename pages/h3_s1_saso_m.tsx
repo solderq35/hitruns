@@ -236,7 +236,7 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                 <Col xl={16} lg={12} className="pr-2 mb-3 overflow-auto">
                     <center>
                         <h4 className="text-center">
-                            {category} {rating} {diff}
+                            {category} {"- "+ rating} {diff}
                         </h4>
                         <p className="class3">Refresh Page if Out of Date</p>
                         <center></center>
