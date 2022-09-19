@@ -8,29 +8,62 @@ import styles from "./LeaderboardTable.module.scss"
 
 import Layout from "../components/Layout"
 import LeaderboardTable from "../components/LeaderboardTable"
+import {
+    rating,
+    diff,
+    ratingdropdown,
+    diffdropdown,
+    level1,
+    level2,
+    level3,
+    level4,
+    level5,
+    level6,
+    level7,
+    level8,
+    level9,
+    level10,
+    level11,
+    level12,
+    level13,
+    level14,
+    level15,
+    level16,
+    level17,
+    level18,
+    level19,
+    level20,
+    level21,
+    level22,
+    level23,
+    level24,
+    level25,
+    level26,
+    level27,
+    level28,
+    level29,
+    level30,
+    level31,
+    level32,
+    level33,
+    level34,
+    level35,
+    level36,
+    level37,
+    level38,
+    level39,
+    level40,
+    level41,
+    level42,
+    FullGameButton,
+    ILButton,
+} from "../components/sa_master_variables"
 
 const linkname = "h3_leaderboards"
 const category = "H3 Individual Level Leaderboards"
 const category2 = "H3 Full Game Leaderboards"
 const category3 = "H3 Leaderboards"
-const rating = "SA"
-const diff = " Master"
 
-let ratingdropdown
-if (rating == "Any%") {
-    ratingdropdown = "any"
-} else {
-    ratingdropdown = rating.toLowerCase()
-}
-
-let diffdropdown
-if (diff == " Pro") {
-    diffdropdown = "p"
-} else if (diff == " Master") {
-    diffdropdown = "m"
-} else if (diff == "") {
-    diffdropdown = ""
-}
 const sap = linkname + "_sa_p"
 const sasop = linkname + "_saso_p"
 const any = linkname + "_any_"
@@ -38,56 +71,13 @@ const sam = linkname + "_sa_m"
 const sasom = linkname + "_saso_m"
 const refreshlink = linkname + "_" + ratingdropdown + "_" + diffdropdown
 
-const level1 = "h3_s1_" + ratingdropdown + "_" + diffdropdown
-const level2 = "h3_s2dlc_" + ratingdropdown + "_" + diffdropdown
-const level3 = "h3_s3_" + ratingdropdown + "_" + diffdropdown
-const level4 = "h3_trilogy_" + ratingdropdown + "_" + diffdropdown
-const level5 = "h3_patientzero_" + ratingdropdown + "_" + "p"
-const level6 = "h3_s2nodlc_" + ratingdropdown + "_" + diffdropdown
-const level7 = "h3_dubai_" + ratingdropdown + "_" + diffdropdown
-const level8 = "h3_dartmoor_" + ratingdropdown + "_" + diffdropdown
-const level9 = "h3_berlin_" + ratingdropdown + "_" + diffdropdown
-const level10 = "h3_chongqing_" + ratingdropdown + "_" + diffdropdown
-const level11 = "h3_mendoza_" + ratingdropdown + "_" + diffdropdown
-const level12 = "h3_romania_" + ratingdropdown + "_" + diffdropdown
-const level13 = "h3_freeform_" + ratingdropdown + "_" + "p"
-const level14 = "h3_finaltest_" + ratingdropdown + "_" + "p"
-const level15 = "h3_paris_" + ratingdropdown + "_" + diffdropdown
-const level16 = "h3_sapienza_" + ratingdropdown + "_" + diffdropdown
-const level17 = "h3_marrakesh_" + ratingdropdown + "_" + diffdropdown
-const level18 = "h3_bangkok_" + ratingdropdown + "_" + diffdropdown
-const level19 = "h3_colorado_" + ratingdropdown + "_" + diffdropdown
-const level20 = "h3_hokkaido_" + ratingdropdown + "_" + diffdropdown
-const level21 = "h3_hawkesbay_" + ratingdropdown + "_" + diffdropdown
-const level22 = "h3_miami_" + ratingdropdown + "_" + diffdropdown
-const level23 = "h3_santafortuna_" + ratingdropdown + "_" + diffdropdown
-const level24 = "h3_mumbai_" + ratingdropdown + "_" + diffdropdown
-const level25 = "h3_whittleton_" + ratingdropdown + "_" + diffdropdown
-const level26 = "h3_sgail_" + ratingdropdown + "_" + diffdropdown
-const level27 = "h3_newyork_" + ratingdropdown + "_" + diffdropdown
-const level28 = "h3_haven_" + ratingdropdown + "_" + diffdropdown
-const level29 = "h3_landslide_" + ratingdropdown + "_" + "p"
-const level30 = "h3_icon_" + ratingdropdown + "_" + "p"
-const level31 = "h3_ahbos_" + ratingdropdown + "_" + "p"
-const level32 = "h3_source_" + ratingdropdown + "_" + "p"
-const level33 = "h3_author_" + ratingdropdown + "_" + "p"
-const level34 = "h3_vector_" + ratingdropdown + "_" + "p"
-const level35 = "h3_pzhokkaido_" + ratingdropdown + "_" + "p"
-const level36 = "h3_embrace_" + ratingdropdown + "_" + diffdropdown
-const level37 = "h3_illusions_" + ratingdropdown + "_" + diffdropdown
-const level38 = "h3_silvertongue_" + ratingdropdown + "_" + diffdropdown
-const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
-const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
-const level41 = "h3_snowfestival_" + ratingdropdown + "_" + diffdropdown
-const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
-
 type Props = {
     pcRuns: ParsedRun[]
 }
 
 const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
     <Layout
-        title = {category3 + " - " + rating + " " + diff + " | HitRuns"}
+        title={category3 + " - " + rating + " " + diff + " | HitRuns"}
         headerText="HITMAN 3 SPEEDRUNS"
     >
         <center>
