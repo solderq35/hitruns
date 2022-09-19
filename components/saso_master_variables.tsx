@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Dropdown from "react-bootstrap/Dropdown"
 export const rating = "SASO"
 export const diff = "Master"
