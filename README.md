@@ -14,7 +14,7 @@ Hitruns also tends to load faster and is more mobile-friendly than the original 
 
 ### Technologies Used:
 
--   NodeJS and Typescript for backend.
+-   Used Next.JS [serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions) ([getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props), to be precise) for the backend.
 -   Next.JS and React Bootstrap Frameworks used for front-end design (particularly for design of navbar, dropdown menus).
 -   Pulled data from speedrun.com's RESTFUL api (https://github.com/speedruncomorg/api/tree/master/version1)
 -   Deployed on Vercel
