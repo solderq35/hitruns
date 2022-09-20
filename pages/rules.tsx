@@ -47,7 +47,7 @@ const IndexPage = (): JSX.Element => (
                     get the total in game time. Use{" "}
                     <a
                         href="http://www.grun1.com/utils/timeCalc.html"
-                        className="class8"
+                        className="class4"
                         target="blank"
                     >
                         {" "}
@@ -63,7 +63,7 @@ const IndexPage = (): JSX.Element => (
                     If rating screen time is negative (
                     <a
                         href="https://rentry.org/h3_peacock_installation"
-                        className="class8"
+                        className="class4"
                         target="blank"
                     >
                         Peacock
@@ -103,7 +103,7 @@ const IndexPage = (): JSX.Element => (
                     If rating screen time is negative (
                     <a
                         href="https://rentry.org/h3_peacock_installation"
-                        className="class8"
+                        className="class4"
                         target="blank"
                     >
                         Peacock
@@ -144,7 +144,7 @@ const IndexPage = (): JSX.Element => (
                 <li>
                     <a
                         href="https://hitman.fandom.com/wiki/Category:HITMAN%E2%84%A2_III_Suits"
-                        className="class8"
+                        className="class4"
                         target="blank"
                     >
                         List of Suits that can be used for SASO
@@ -186,7 +186,7 @@ const IndexPage = (): JSX.Element => (
                     Run should not use{" "}
                     <a
                         href="https://youtu.be/w3Yd-BraFwM"
-                        className="class8"
+                        className="class4"
                         target="blank"
                     >
                         {" "}
@@ -208,7 +208,7 @@ const IndexPage = (): JSX.Element => (
                     Run should not use{" "}
                     <a
                         href="https://youtu.be/mJyyyYnrXlk?t=1529"
-                        className="class8"
+                        className="class4"
                         target="blank"
                     >
                         {" "}
