@@ -119,7 +119,7 @@ const IndexPage = (): JSX.Element => (
                 rel="noreferrer"
             >
                 {" "}
-                HitRuns Wiki{" "}
+                HitRuns Wiki
             </a>
             .
         </p>
