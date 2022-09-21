@@ -112,8 +112,7 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
             </table>
             &nbsp
             <h4 className="text-center">
-                {category2} ({rating}
-                {diff})
+                {category} ({rating} {diff})
             </h4>
             <p>
                 <a href={level3} className="class5">
@@ -142,8 +141,7 @@ const IndexPage = ({ runs, compact, top = 0 }: Props): JSX.Element => (
             </p>
             &nbsp
             <h4 className="text-center">
-                {category} ({rating}
-                {diff})
+                {category} ({rating} {diff})
             </h4>
             <p>
                 <a href={level7} className="class5">
