@@ -46,7 +46,7 @@ const IndexPage = (): JSX.Element => (
                     Add up the in game time from each level's rating screen to
                     get the total in game time. Use{" "}
                     <a
-                        href="http://www.grun1.com/utils/timeCalc.html"
+                        href="https://solderq35.github.io/fg-time-calc/"
                         className="class4"
                         target="blank"
                     >
