@@ -62,7 +62,7 @@ const IndexPage = (): JSX.Element => (
                 <li>
                     If rating screen time is negative (
                     <a
-                        href="https://rentry.org/h3_peacock_installation"
+                        href="https://thepeacockproject.org/wiki/intel"
                         className="class4"
                         target="blank"
                     >
@@ -102,7 +102,7 @@ const IndexPage = (): JSX.Element => (
                 <li>
                     If rating screen time is negative (
                     <a
-                        href="https://rentry.org/h3_peacock_installation"
+                        href="https://thepeacockproject.org/wiki/intel"
                         className="class4"
                         target="blank"
                     >
@@ -155,10 +155,6 @@ const IndexPage = (): JSX.Element => (
                         Midnight Black Suit not allowed in Mendoza (trespassing
                         permissions bugged)
                     </li>
-                    <li>
-                        Polar Sniper Suit not allowed in any map (trespassing
-                        permissions bugged)
-                    </li>
                 </ul>
                 <li>
                     SASO runs can be performed on professional or master
@@ -181,6 +177,17 @@ const IndexPage = (): JSX.Element => (
         <h2> Standard Game Version/ Ruleset </h2>
         <p>
             <ul>
+                <li>
+                    {" "}
+                    <a
+                        href="https://rentry.org/h3_standard"
+                        className="class4"
+                        target="blank"
+                    >
+                        {" "}
+                        More Information
+                    </a>{" "}
+                </li>
                 <li>Run should be possible on current patch of Hitman 3</li>
                 <li>
                     Run should not use{" "}
@@ -195,10 +202,6 @@ const IndexPage = (): JSX.Element => (
                     (shoot target with Kalmer or use other sedative on them,
                     kill with non-accident method right after, keep SA if body
                     found).
-                </li>
-                <li>
-                    Run does not use Midnight Suit in Mendoza (trespassing
-                    permissions are bugged)
                 </li>
                 <li>
                     Run does not use Polar Survival Suit on any map (trespassing
