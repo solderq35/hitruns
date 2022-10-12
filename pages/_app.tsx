@@ -10,7 +10,8 @@ function MyApp({ Component, pageProps }) {
     <div>
       <Head>
         <title>HitRuns</title>
-        <meta name="description" content="H3 Speedrun.com Mirror Site- Faster Load Times, More Mobile Friendly" />
+        <meta name="description" content="Speedrun.com Clone (for Hitman 3)" />
+		<meta property="og:image" content="https://github.com/solderq35/hitruns/blob/source3/public/favicon/favicon.png?raw=true" />
       </Head>
       <Component {...pageProps} />
     </div>
