@@ -55,6 +55,7 @@ import {
     FullGameButton,
     ILButton,
 } from "../components/any_variables"
+import lb_labels from "../components/lb_labels"
 import { requestRuns } from "../lib/h3_trilogy_any_run"
 
 const linkname = "h3_trilogy"
@@ -86,6 +87,12 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             {category} {"- " + rating} {diff}
                         </h4>
                         <p className="class3">Refresh Page if Out of Date</p>
+                        <p className="class8">
+                            <a href="https://hitruns-wiki.vercel.app/docs/h3_patch_notes">
+                                Click Here for more info regarding Hitman 3 Game
+                                Versions / Patch
+                            </a>
+                        </p>
                         <center></center>
 
                         <table className="center" width="100%" id="subcat">

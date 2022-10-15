@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import LeaderboardTable from "../components/LeaderboardTable"
 import { Row, Col } from "react-bootstrap"
 import Dropdown from "react-bootstrap/Dropdown"
+import refresh_game_version from "../components/refresh_game_version"
 import {
     rating,
     diff,
@@ -86,6 +87,13 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                             {category} {"- " + rating} {diff}
                         </h4>
                         <p className="class3">Refresh Page if Out of Date</p>
+                        <p className="class8">
+                            <a href="https://hitruns-wiki.vercel.app/docs/h3_patch_notes">
+                                Click Here for more info regarding Hitman 3 Game
+                                Versions / Patch
+                            </a>
+                        </p>
+                        <center></center>
                         <center></center>
 
                         <table className="center" width="100%" id="subcat">

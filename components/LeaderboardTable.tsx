@@ -37,6 +37,7 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                 <th>Player</th>
                 <th className="text-right">In Game Time</th>
                 <th className="text-right">Real Time</th>
+                <th className="text-right">Game Version</th>
                 {!compact && <th className="text-right">Date</th>}
             </tr>
         </thead>
@@ -101,6 +102,18 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                                 {formatTime(run.realtime || 0)}
                             </a>
                         </td>
+
+                        {!compact && (
+                            <td className="text-right">
+                                <a
+                                    href={run.weblink}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {run.gameversion}
+                                </a>
+                            </td>
+                        )}
 
                         {!compact && (
                             <td className="text-right">

@@ -22,12 +22,20 @@ export const parseRuns = (
         if (item.run.values["5lypzk9l"] == "mlnw9jol") {
             item.run.values["5lypzk9l"] = "Master"
         }
+        if (item.run.values["789d3g9n"] == "814nxkjl") {
+            item.run.values["789d3g9n"] = "Standard"
+        }
+        if (item.run.values["789d3g9n"] == "z19w45kq") {
+            item.run.values["789d3g9n"] = "No Longer Possible"
+        }
+
         return {
             place: item.place,
             id: item.run.id,
             player,
             date: item.run.date,
             fullgamediff: item.run.values["5lypzk9l"] || 0,
+            gameversion: item.run.values["789d3g9n"] || 0,
             weblink: item.run.videos.links.slice(-1)[0].uri,
             realtime_noloads: item.run.times.realtime_noloads_t || 0,
             //var tester = item.run.players[0]?.rel;
