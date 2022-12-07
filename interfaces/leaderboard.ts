@@ -62,7 +62,7 @@ export type ParsedRun = {
     date: string
     fullgamediff: string
     gameversion: string
-    grin: string
+    grun: string
     weblink: string
     realtime: number
     realtime_noloads: number
