@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Converts runs as obtained from speedrun.com into an object that is easier to work with.
 import { ParsedRun, ReqPlayer, ReqRun } from "../interfaces/leaderboard"
 
@@ -30,8 +31,6 @@ export const parseRuns = (
         }
         if (item.run.comment == null) {
             item.run.comment = "nogrun"
-        }
-        if (item.run.comment == "nogrun") {
         }
         if (item.run.comment.match(/\bhttps?:\/\/\S+/gi) != null) {
             item.run.comment = item.run.comment.match(/\bhttps?:\/\/\S+/gi)
