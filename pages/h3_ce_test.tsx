@@ -240,27 +240,57 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
 
                         <table className="center" width="100%" id="subcat">
                             <tr>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={sap} className="class3">
                                         SA Pro
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={sasop} className="class3">
                                         SASO Pro
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={any} className="class3">
                                         Any%
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={sam} className="class3">
                                         SA Master
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={sasom} className="class3">
                                         SASO Master
                                     </a>{" "}

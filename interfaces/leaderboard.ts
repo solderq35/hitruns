@@ -9,6 +9,7 @@ export type ReqRun = {
         date: string
         fullgamediff: string
         gameversion: string
+        grun: string
         submitted: string
         videos: {
             links: readonly { uri: string }[]
@@ -61,6 +62,7 @@ export type ParsedRun = {
     date: string
     fullgamediff: string
     gameversion: string
+    grin: string
     weblink: string
     realtime: number
     realtime_noloads: number

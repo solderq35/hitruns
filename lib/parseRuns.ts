@@ -28,6 +28,14 @@ export const parseRuns = (
         if (item.run.values["789d3g9n"] == "z19w45kq") {
             item.run.values["789d3g9n"] = "No Longer Possible"
         }
+        if (item.run.comment == null) {
+            item.run.comment = "nogrun"
+        }
+        if (item.run.comment == "nogrun") {
+        }
+        if (item.run.comment.match(/\bhttps?:\/\/\S+/gi) != null) {
+            item.run.comment = item.run.comment.match(/\bhttps?:\/\/\S+/gi)
+        }
 
         return {
             place: item.place,
@@ -39,7 +47,7 @@ export const parseRuns = (
             weblink: item.run.videos.links.slice(-1)[0].uri,
             realtime_noloads: item.run.times.realtime_noloads_t || 0,
             //var tester = item.run.players[0]?.rel;
-
+            grun: item.run.comment,
             realtime: item.run.times.realtime_t || 0,
             platform: "8gej2n93" || "4p9zjrer",
 

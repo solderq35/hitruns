@@ -87,26 +87,44 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                         </h4>
                         <p className="class3">Refresh Page if Out of Date</p>
                         <p className="class8">
-                            <a href="https://hitruns-wiki.vercel.app/docs/h3_patch_notes">
-                                Click Here for more info regarding Hitman 3 Game
-                                Versions / Patch
+                            <a href="https://hitruns.vercel.app/h3_patched_runs.html">
+                                Click Here for Archive Sheet of No Longer
+                                Possible (Patched) Runs
                             </a>
                         </p>
                         <center></center>
 
                         <table className="center" width="100%" id="subcat">
                             <tr>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={sap} className="class3">
                                         SA Pro
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={sasop} className="class3">
                                         SASO Pro
                                     </a>{" "}
                                 </th>
-                                <th mt-2 mb-0 color-yellow d-none d-md-block>
+                                <th
+                                    mt-2="true"
+                                    mb-0="true"
+                                    color-yellow="true"
+                                    d-none="true"
+                                    d-md-block="true"
+                                >
                                     <a href={any} className="class3">
                                         Any%
                                     </a>{" "}

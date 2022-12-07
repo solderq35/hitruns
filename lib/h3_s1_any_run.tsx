@@ -16,7 +16,7 @@ export const requestRuns: any = async () => {
             rating +
             "&var-5lypzk9l=" +
             difficulty +
-            "&var-78962g08=p12dkr2q&embed=platforms%2Cplayers&timing=realtime_noloads"
+            "&var-789d3g9n=814nxkjl&embed=platforms%2Cplayers&timing=realtime_noloads"
     )
 
     const { data } = response.data
