@@ -2,7 +2,7 @@ import axios from "axios"
 import type { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
-export const requestRuns: () => Promise<ParsedRun[][]> = async () => {
+export const requestRuns: any = async () => {
     const mapcategory = "zd3oqzrd"
     const difficulty = "mlnw9jol"
     const rating = "gq7jpknq"
@@ -19,9 +19,7 @@ export const requestRuns: () => Promise<ParsedRun[][]> = async () => {
 
     const { data } = response.data
 
-    // @ts-expect-error How does this work
     const requestedRuns: ReqRun[] = data.runs
-    // @ts-expect-error How does this work
     const requestedEmbedPlayers: ReqPlayer[] = data.players.data
 
     const pcRuns: ParsedRun[] = parseRuns(requestedRuns, requestedEmbedPlayers)
