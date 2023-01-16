@@ -122,6 +122,16 @@ const IndexPage = (): JSX.Element => (
                 HitRuns Wiki
             </a>
             .
+              For a more quick summary of the Hitman speedrun top times for each category, as well as sum-of-bests, check {" "}
+            <a
+                href="https://hitruns-top-times.vercel.app/"
+                className="class4"
+                target="_blank"
+                rel="noreferrer"
+            >
+                Hitruns Top Times
+            </a>
+            .
         </p>
         &nbsp
         <h2> Hitman 3 Leaderboards </h2>
