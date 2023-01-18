@@ -12,6 +12,8 @@ The site automatically updates itself periodically to match the current Hitman 3
 
 Hitruns also tends to load faster and is more mobile-friendly than the original Hitman 3 leaderboard on speedrun.com (due to cutting out a lot of unnecessary features) which is a further bonus.
 
+For a quick summary of the top times of each Hitman 3 speedrun category, as well as sum-of-bests, check out [Hitruns Top Times](https://hitruns-top-times.vercel.app/).
+
 ### Technologies Used:
 
 -   Used Next.JS [serverless functions](https://vercel.com/docs/concepts/functions/serverless-functions) ([getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props), to be precise) for the backend.
