@@ -33,11 +33,13 @@ export const parseRuns = (
             item.run.comment = "nogrun"
         }
         if (item.run.comment.match(/\bhttps?:\/\/\S+/gi) != null) {
-            let commentInitial = item.run.comment;
-            let linkextract = commentInitial.match(/\bhttps?:\/\/\S+/gi);
-            let apostropheReplace = linkextract[0].toString().replace(/'/g, "%27");
-            let rightParenthesisReplace = apostropheReplace.replace(/\)/g, "");
-            item.run.comment = rightParenthesisReplace;
+            let commentInitial = item.run.comment
+            let linkextract = commentInitial.match(/\bhttps?:\/\/\S+/gi)
+            let apostropheReplace = linkextract[0]
+                .toString()
+                .replace(/'/g, "%27")
+            let rightParenthesisReplace = apostropheReplace.replace(/\)/g, "")
+            item.run.comment = rightParenthesisReplace
         }
 
         return {

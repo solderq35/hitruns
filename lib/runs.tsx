@@ -8,7 +8,12 @@ export const requestRuns: any = async () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
     const response = await axios.get(
-        "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=gq7jpknq&embed=platforms%2Cplayers&timing=realtime_noloads"
+        "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=gq7jpknq&embed=platforms%2Cplayers&timing=realtime_noloads",
+        {
+            headers: {
+                "Cache-Control": "max-age=300",
+            },
+        }
     )
 
     const { data } = response.data
