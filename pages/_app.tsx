@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
                 />
                 <meta
                     property="og:image"
-                    content="favicon.png"
+                    content="https://github.com/solderq35/hitruns/blob/source3/public/favicon/favicon.png?raw=true"
                 />
             </Head>
             <Component {...pageProps} />
