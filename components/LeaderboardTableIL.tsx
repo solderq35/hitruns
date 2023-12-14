@@ -15,18 +15,37 @@ const formatTime = (inputSeconds: number): string => {
     }
 
     const hours: string = Math.floor(inputSeconds / 3600).toString()
-    const minutes: string = padStart(
+    let minutes: string = padStart(
         Math.floor((inputSeconds % 3600) / 60).toString(),
         2,
         "0"
     )
+    if (hours === "0") {
+        minutes = padStart(
+            Math.floor((inputSeconds % 3600) / 60).toString(),
+            1,
+            "0"
+        )
+    }
     const seconds: string = padStart(
         Math.floor(inputSeconds % 60).toString(),
         2,
         "0"
     )
 
-    return `${hours !== "0" ? `${hours}h` : ""} ${minutes}m ${seconds}s`
+    const milliseconds: string = padStart(
+        ((inputSeconds % 1) * 1000).toFixed(0),
+        3,
+        "0"
+    )
+
+    if (milliseconds !== "000") {
+        return `${
+            hours !== "0" ? `${hours}h` : ""
+        } ${minutes}m ${seconds}s ${milliseconds}ms`
+    } else {
+        return `${hours !== "0" ? `${hours}h` : ""} ${minutes}m ${seconds}s`
+    }
 }
 
 const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
@@ -34,8 +53,8 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
         <thead>
             <tr className={`${styles.default}`}>
                 <th></th>
-                <th>Player</th>
-                <th className="text-right">In Game Time</th>
+                {!compact && <th>Player</th>}
+                {!compact && <th className="text-right">In Game Time</th>}
 
                 {!compact && <th className="text-right">Date</th>}
             </tr>
@@ -88,7 +107,9 @@ const LeaderboardTable = ({ runs, compact, top = 0 }: Props): JSX.Element => (
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                {formatTime(run.realtime || 0)}
+                                {formatTime(run.realtime || 0) !== "N/A"
+                                    ? formatTime(run.realtime || 0)
+                                    : formatTime(run.realtime_noloads || 0)}
                             </a>
                         </td>
 
