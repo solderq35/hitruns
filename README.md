@@ -21,28 +21,24 @@ For a quick summary of the top times of each Hitman 3 speedrun category, as well
 -   Pulled data from speedrun.com's RESTFUL api (https://github.com/speedruncomorg/api/tree/master/version1)
 -   Deployed on Vercel
 
-### Screenshot of Leaderboard page:
+### Screenshot
 
 ![Screenshot of Leaderboard](https://media.discordapp.net/attachments/833505136290299935/993949617760772206/unknown.png?width=1154&height=670)
 
-## Usage Setup
+## Site Setup
 
-Clone the project using `git clone` command like so:
+### Dependencies
 
-```sh
-git clone https://github.com/solderq35/hitruns.git
-```
+You will need NodeJS version `18` or newer
 
-Navigate into the repository folder and install the project's dependecies using this command:
+How to change NodeJS version:
 
-```sh
-yarn install
-```
+- See https://github.com/coreybutler/nvm-windows or https://github.com/nvm-sh/nvm
+- `nvm install 18`
+- `nvm use 18`
 
-When the dependencies are done installing run the development server with the following command:
+### Installation
 
-```sh
-yarn dev
-```
-
-The project is now up and running on port 3000.
+- `yarn install` to install required node modules.
+- `yarn dev` to open the dev environment to preview the website (http://localhost:3000).
+- `yarn build` to build the website locally (needed if you want to test the search function before deployment).
