@@ -25,8 +25,6 @@ For a quick summary of the top times of each Hitman 3 speedrun category, as well
 
 ![image](https://github.com/solderq35/hitruns/assets/82061589/f5c90ad8-768d-4f44-bad6-405ea0daf3c9)
 
-)
-
 ## Site Setup
 
 ### Dependencies
