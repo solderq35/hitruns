@@ -64,7 +64,7 @@ const sap = linkname + "_sa_p"
 const sasop = linkname + "_saso_p"
 const any = linkname + "_any_"
 const sam = linkname + "_sa_m"
-const sasom = linkname + "h3__saso_m"
+const sasom = linkname + "_saso_m"
 const refreshlink = linkname + "_" + ratingdropdown + "_" + diffdropdown
 
 type Props = {
