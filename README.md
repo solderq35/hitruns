@@ -33,12 +33,12 @@ You will need NodeJS version `18` or newer
 
 How to change NodeJS version:
 
-- See https://github.com/coreybutler/nvm-windows or https://github.com/nvm-sh/nvm
-- `nvm install 18`
-- `nvm use 18`
+-   See https://github.com/coreybutler/nvm-windows or https://github.com/nvm-sh/nvm
+-   `nvm install 18`
+-   `nvm use 18`
 
 ### Installation
 
-- `yarn install` to install required node modules.
-- `yarn dev` to open the dev environment to preview the website (http://localhost:3000).
-- `yarn build` to build the website locally (needed if you want to test the search function before deployment).
+-   `yarn install` to install required node modules.
+-   `yarn dev` to open the dev environment to preview the website (http://localhost:3000).
+-   `yarn build` to build the website locally (needed if you want to test the search function before deployment).
