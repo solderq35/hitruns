@@ -14,12 +14,7 @@ export const requestRuns: () => Promise<ParsedRun[][]> = async () => {
             rating +
             "&var-5lypzk9l=" +
             difficulty +
-            "&var-789d3g9n=814nxkjl&embed=platforms%2Cplayers&timing=realtime_noloads",
-        {
-            headers: {
-                "Cache-Control": "max-age=0",
-            },
-        }
+            "&var-789d3g9n=814nxkjl&embed=platforms%2Cplayers&timing=realtime_noloads"
     )
 
     const { data } = response.data
