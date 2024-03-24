@@ -303,12 +303,9 @@ const Leaderboard = ({ runs }: Props): JSX.Element => {
                     <center></center>
                     &nbsp &nbsp
                     <LeaderboardTable runs={runs} />
-                </Col>
-                //{" "}
-                <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto">
-                    //
-                </Col>
-                //<Col xs={12}></Col>
+                </Col>{" "}
+                <Col xl={6} lg={12} className="pl-2 mb-3 overflow-auto"></Col>
+                <Col xs={12}></Col>
             </Row>
             <p></p>
         </Layout>
