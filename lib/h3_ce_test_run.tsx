@@ -29,7 +29,7 @@ export const requestRuns: any = async () => {
             "&var-9l77z97l=810zk8pq&embed=platforms%2Cplayers&timing=realtime",
         {
             headers: {
-                "Cache-Control": "max-age=300",
+                "Cache-Control": "max-age=0",
             },
         }
     )

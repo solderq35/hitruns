@@ -11,7 +11,7 @@ export const requestRuns: any = async () => {
         "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/rkl3no8k?var-j84eq0wn=gq7jpknq&embed=platforms%2Cplayers&timing=realtime_noloads",
         {
             headers: {
-                "Cache-Control": "max-age=300",
+                "Cache-Control": "max-age=0",
             },
         }
     )
