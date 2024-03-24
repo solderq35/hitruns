@@ -156,7 +156,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: { runs },
-        revalidate: 0,
+        revalidate: false,
     }
 }
 
