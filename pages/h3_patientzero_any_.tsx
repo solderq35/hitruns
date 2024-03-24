@@ -1,5 +1,4 @@
 // @ts-nocheck
-export const revalidate = 0
 import { GetStaticProps } from "next"
 import { ParsedRun } from "../interfaces/leaderboard"
 import Layout from "../components/Layout"
@@ -157,6 +156,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: { runs },
+        revalidate: 300,
     }
 }
 

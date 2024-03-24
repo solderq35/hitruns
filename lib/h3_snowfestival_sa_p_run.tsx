@@ -17,7 +17,12 @@ export const requestRuns: any = async () => {
             difficultyvarname +
             "=" +
             difficulty +
-            "&var-ylpe1pv8=klrpdvwq&embed=platforms%2Cplayers&timing=realtime_noloads"
+            "&var-ylpe1pv8=klrpdvwq&embed=platforms%2Cplayers&timing=realtime_noloads",
+        {
+            headers: {
+                "Cache-Control": "max-age=300",
+            },
+        }
     )
 
     const { data } = response.data

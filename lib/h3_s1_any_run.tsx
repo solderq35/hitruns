@@ -16,7 +16,12 @@ export const requestRuns: any = async () => {
             rating +
             "&var-5lypzk9l=" +
             difficulty +
-            "&var-789d3g9n=814nxkjl&embed=platforms%2Cplayers&timing=realtime_noloads"
+            "&var-789d3g9n=814nxkjl&embed=platforms%2Cplayers&timing=realtime_noloads",
+        {
+            headers: {
+                "Cache-Control": "max-age=300",
+            },
+        }
     )
 
     const { data } = response.data
