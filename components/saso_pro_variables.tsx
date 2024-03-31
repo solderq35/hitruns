@@ -64,6 +64,8 @@ export const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
 export const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
 export const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
 export const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
+export const level43 = "h3_director_s6_" + ratingdropdown + "_" + "p"
+export const level44 = "h3_enforcer_s6_" + ratingdropdown + "_" + "p"
 
 export function FullGameButton() {
     return (
@@ -211,6 +213,12 @@ export function ILButton() {
                 </Dropdown.Item>
                 <Dropdown.Item href={level42} className="class2">
                     Shadows in the Water (Ambrose Island)
+                </Dropdown.Item>
+                <Dropdown.Item href={level43} className="class2">
+                    The Director (Sarajevo Six)
+                </Dropdown.Item>
+                <Dropdown.Item href={level43} className="class2">
+                    The Enforcer (Sarajevo Six)
                 </Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
