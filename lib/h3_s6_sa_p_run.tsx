@@ -3,21 +3,18 @@ import { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
 export const requestRuns: any = async () => {
-    const mapcategory = "xd1pjeed"
-    const rating = "7kj890zd"
-    const difficultyvarname = "p854xo3l"
-    const difficulty = "21g85z6l"
+    const mapcategory = "n2y6r38d"
+    const difficulty = "4qyp9g6q"
+    const rating = "gq7jpknq"
 
     const response = await axios.get(
-        "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/level/" +
+        "https://www.speedrun.com/api/v1/leaderboards/j1ne5891/category/" +
             mapcategory +
-            "/" +
+            "?var-j84eq0wn=" +
             rating +
-            "?var-" +
-            difficultyvarname +
-            "=" +
+            "&var-5lypzk9l=" +
             difficulty +
-            "&var-ylpe1pv8=klrpdvwq&embed=platforms%2Cplayers&timing=realtime_noloads",
+            "&var-789d3g9n=814nxkjl&embed=platforms%2Cplayers&timing=realtime_noloads",
         {
             headers: {
                 "Cache-Control": "max-age=300",
