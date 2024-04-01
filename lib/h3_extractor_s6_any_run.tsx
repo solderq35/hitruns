@@ -3,8 +3,8 @@ import { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
 export const requestRuns: any = async () => {
-    const mapcategory = "o9x8ov6w"
-    const rating = "7kj890zd"
+    const mapcategory = "rdqpovm9"
+    const rating = "jdz6nx62"
     const difficultyvarname = "p854xo3l"
     const difficulty = "gq7jpmpq"
 

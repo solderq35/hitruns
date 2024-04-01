@@ -61,7 +61,8 @@ export const level36 = "h3_embrace_" + ratingdropdown + "_" + diffdropdown
 export const level37 = "h3_illusions_" + ratingdropdown + "_" + diffdropdown
 export const level38 = "h3_silvertongue_" + ratingdropdown + "_" + diffdropdown
 export const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
-export const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + diffdropdown
+export const level40 =
+    "h3_holidayhoarders_" + ratingdropdown + "_" + diffdropdown
 export const level41 = "h3_snowfestival_" + ratingdropdown + "_" + diffdropdown
 export const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
 export const level43 = "h3_director_s6_" + ratingdropdown + "_" + diffdropdown

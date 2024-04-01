@@ -5,7 +5,7 @@ import { parseRuns } from "./parseRuns"
 export const requestRuns: any = async () => {
     const mapcategory = "o9x8ov6w"
     const rating = "jdz6nx62"
-    const difficultyvarname = "4953z02d"
+    const difficultyvarname = "p854xo3l"
     const difficulty = "gq7jpmpq"
 
     const response = await axios.get(

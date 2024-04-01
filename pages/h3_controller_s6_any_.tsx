@@ -54,11 +54,11 @@ import {
     level42,
     FullGameButton,
     ILButton,
-} from "../components/saso_pro_variables"
-import { requestRuns } from "../lib/h3_director_s6_saso_p_run"
+} from "../components/any_variables"
+import { requestRuns } from "../lib/h3_controller_s6_any_run"
 
-const linkname = "h3_director_s6"
-const category = "The Director (Sarajevo Six)"
+const linkname = "h3_controller_s6"
+const category = "The Controller (Sarajevo Six)"
 
 const sap = linkname + "_sa_p"
 const sasop = linkname + "_saso_p"

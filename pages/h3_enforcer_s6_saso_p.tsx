@@ -52,7 +52,6 @@ import {
     level40,
     level41,
     level42,
-    level43,
     FullGameButton,
     ILButton,
 } from "../components/saso_pro_variables"

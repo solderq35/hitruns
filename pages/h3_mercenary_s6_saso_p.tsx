@@ -55,10 +55,10 @@ import {
     FullGameButton,
     ILButton,
 } from "../components/saso_pro_variables"
-import { requestRuns } from "../lib/h3_director_s6_saso_p_run"
+import { requestRuns } from "../lib/h3_mercenary_s6_saso_p_run"
 
-const linkname = "h3_director_s6"
-const category = "The Director (Sarajevo Six)"
+const linkname = "h3_mercenary_s6"
+const category = "The Mercenary (Sarajevo Six)"
 
 const sap = linkname + "_sa_p"
 const sasop = linkname + "_saso_p"
