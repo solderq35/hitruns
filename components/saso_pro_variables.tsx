@@ -64,8 +64,13 @@ export const level39 = "h3_bitterpill_" + ratingdropdown + "_" + diffdropdown
 export const level40 = "h3_holidayhoarders_" + ratingdropdown + "_" + "p"
 export const level41 = "h3_snowfestival_" + ratingdropdown + "_" + "p"
 export const level42 = "h3_ambrose_" + ratingdropdown + "_" + diffdropdown
-export const level43 = "h3_director_s6_" + ratingdropdown + "_" + "p"
-export const level44 = "h3_enforcer_s6_" + ratingdropdown + "_" + "p"
+export const level43 = "h3_s6_" + ratingdropdown + "_" + "p" // full game cat added late, broke pattern sadge
+export const level44 = "h3_director_s6_" + ratingdropdown + "_" + "p"
+export const level45 = "h3_enforcer_s6_" + ratingdropdown + "_" + "p"
+export const level46 = "h3_extractor_s6_" + ratingdropdown + "_" + "p"
+export const level47 = "h3_veteran_s6_" + ratingdropdown + "_" + "p"
+export const level48 = "h3_mercenary_s6_" + ratingdropdown + "_" + "p"
+export const level49 = "h3_controller_s6_" + ratingdropdown + "_" + "p"
 
 export function FullGameButton() {
     return (
@@ -92,6 +97,9 @@ export function FullGameButton() {
                 </Dropdown.Item>
                 <Dropdown.Item href={level6} className="class2">
                     Season 2 (no DLC)
+                </Dropdown.Item>
+                <Dropdown.Item href={level43} className="class2">
+                    Sarajevo Six Campaign
                 </Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
@@ -214,11 +222,23 @@ export function ILButton() {
                 <Dropdown.Item href={level42} className="class2">
                     Shadows in the Water (Ambrose Island)
                 </Dropdown.Item>
-                <Dropdown.Item href={level43} className="class2">
+                <Dropdown.Item href={level44} className="class2">
                     The Director (Sarajevo Six)
                 </Dropdown.Item>
-                <Dropdown.Item href={level43} className="class2">
+                <Dropdown.Item href={level45} className="class2">
                     The Enforcer (Sarajevo Six)
+                </Dropdown.Item>
+                <Dropdown.Item href={level46} className="class2">
+                    The Extractor (Sarajevo Six)
+                </Dropdown.Item>
+                <Dropdown.Item href={level47} className="class2">
+                    The Veteran (Sarajevo Six)
+                </Dropdown.Item>
+                <Dropdown.Item href={level48} className="class2">
+                    The Mercenary (Sarajevo Six)
+                </Dropdown.Item>
+                <Dropdown.Item href={level49} className="class2">
+                    The Controller (Sarajevo Six)
                 </Dropdown.Item>
             </Dropdown.Menu>
         </Dropdown>
