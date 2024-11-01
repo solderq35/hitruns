@@ -68,11 +68,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://hitruns.vercel.app/h3_s2nodlc_sa_p</loc>
-  <lastmod>2022-09-21T03:37:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://hitruns.vercel.app/h3_dubai_sa_p</loc>
   <lastmod>2022-09-21T03:37:32+00:00</lastmod>
   <priority>0.64</priority>
@@ -274,11 +269,6 @@
 </url>
 <url>
   <loc>https://hitruns.vercel.app/h3_patientzero_saso_p</loc>
-  <lastmod>2022-09-21T03:37:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://hitruns.vercel.app/h3_s2nodlc_saso_p</loc>
   <lastmod>2022-09-21T03:37:32+00:00</lastmod>
   <priority>0.51</priority>
 </url>
@@ -488,11 +478,6 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://hitruns.vercel.app/h3_s2nodlc_any_</loc>
-  <lastmod>2022-09-21T03:37:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
   <loc>https://hitruns.vercel.app/h3_dubai_any_</loc>
   <lastmod>2022-09-21T03:37:32+00:00</lastmod>
   <priority>0.51</priority>
@@ -693,11 +678,6 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://hitruns.vercel.app/h3_s2nodlc_sa_m</loc>
-  <lastmod>2022-09-21T03:37:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
   <loc>https://hitruns.vercel.app/h3_dubai_sa_m</loc>
   <lastmod>2022-09-21T03:37:32+00:00</lastmod>
   <priority>0.51</priority>
@@ -839,11 +819,6 @@
 </url>
 <url>
   <loc>https://hitruns.vercel.app/h3_trilogy_saso_m</loc>
-  <lastmod>2022-09-21T03:37:32+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://hitruns.vercel.app/h3_s2nodlc_saso_m</loc>
   <lastmod>2022-09-21T03:37:32+00:00</lastmod>
   <priority>0.51</priority>
 </url>
