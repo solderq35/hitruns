@@ -27,7 +27,6 @@ export const level2 = "h3_s2dlc_" + ratingdropdown + "_" + diffdropdown
 export const level3 = "h3_s3_" + ratingdropdown + "_" + diffdropdown
 export const level4 = "h3_trilogy_" + ratingdropdown + "_" + diffdropdown
 export const level5 = "h3_patientzero_" + ratingdropdown + "_" + "p"
-export const level6 = "h3_s2nodlc_" + ratingdropdown + "_" + diffdropdown
 export const level7 = "h3_dubai_" + ratingdropdown + "_" + diffdropdown
 export const level8 = "h3_dartmoor_" + ratingdropdown + "_" + diffdropdown
 export const level9 = "h3_berlin_" + ratingdropdown + "_" + diffdropdown
@@ -94,9 +93,6 @@ export function FullGameButton() {
                 </Dropdown.Item>
                 <Dropdown.Item href={level5} className="class2">
                     Patient Zero
-                </Dropdown.Item>
-                <Dropdown.Item href={level6} className="class2">
-                    Season 2 (no DLC)
                 </Dropdown.Item>
                 <Dropdown.Item href={level43} className="class2">
                     Sarajevo Six Campaign

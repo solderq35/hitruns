@@ -2,7 +2,7 @@ import axios from "axios"
 import { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
-export const requestRuns: () => Promise<ParsedRun[][]> = async () => {
+export const requestRuns: any = async () => {
     const mapcategory = "zd3oqzrd"
     const difficulty = "4qyp9g6q"
     const rating = "21g85yxl"
