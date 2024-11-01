@@ -2,7 +2,7 @@ import axios from "axios"
 import type { ReqRun, ParsedRun, ReqPlayer } from "../interfaces/leaderboard"
 import { parseRuns } from "./parseRuns"
 
-export const requestRuns: () => Promise<ParsedRun[][]> = async () => {
+export const requestRuns: any = async () => {
     const mapcategory = "ndx5nvvk"
     const difficulty = "mlnw9jol"
     const rating = "21g85yxl"
@@ -24,7 +24,7 @@ export const requestRuns: () => Promise<ParsedRun[][]> = async () => {
 
     const { data } = response.data
 
-    const requestedRuns: ReqRun[] = data.runs as ReqRun[]
+    const requestedRuns: ReqRun[] = data.runs
     const requestedEmbedPlayers: ReqPlayer[] = data.players.data
 
     const pcRuns: ParsedRun[] = parseRuns(requestedRuns, requestedEmbedPlayers)
